@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   return (
-    <section className="px-6 md:px-12 py-12 md:py-20 bg-[#FAF9F6]">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-8 ">
+    <section className="px-6 md:px-12 bg-[#FAF9F6] border-[#e5e5e5]">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-8 border-x border-t py-12 border-[#e5e5e5]">
         <div
           className="text-[120px] -rotate-90 md:text-[180px] font-bold text-[#FAF9F6] select-none self-center "
           style={{ WebkitTextStroke: "2px #e5e5e5" }}
@@ -22,10 +22,12 @@ export function HeroSection() {
             <br />
             <span className="text-[#7C3AED]">Ecosystems.</span>
           </h1>
-          <p className="text-[#666] max-w-md mb-8 leading-relaxed">
-            Based in the intersection of robust code and Swiss design
-            principles. Focused on building interfaces that are as functional as
-            they are beautiful.
+          <p className="text-[#666] max-w-xl mb-8 leading-relaxed">
+            I’m a software engineer who likes turning messy ideas into
+            well-structured products. I enjoy working across the stack, but I’m
+            especially into designing systems that are simple on the surface and
+            solid underneath. I care a lot about developer experience,
+            performance, and writing code future-me won’t hate.
           </p>
           <Button
             variant="outline"
