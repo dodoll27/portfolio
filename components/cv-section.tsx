@@ -1,10 +1,19 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+
 const experiences = [
   {
     year: "2026",
     label: "JUNIOR SOFTWARE ENGINEER",
     company: "Native Spaces",
+    href: "/experience/native-spaces",
     description:
-      "Collaborated with cross-functional teams to ship quality digital products. Helped define requirements, prioritize features, and manage the backlog to keep everything aligned. Gathered user feedback to make informed decisions and ensure people actually love what we build. Supported development with clear documentation and kept stakeholders in the loop.",
+      "Collaborated with cross-functional teams to ship quality digital products. Helped define requirements, prioritize features, and manage the backlog to keep everything aligned. Gathered user feedback to make informed decisions and ensure people actually love what we build.",
+    list: [
+      "Shipped production features used by real users",
+      "Collaborated in team environments with shared ownership",
+      "Balanced speed with long-term maintainability",
+    ],
     icon: null,
   },
 ];
@@ -49,15 +58,25 @@ export function CVSection() {
                   <h3 className="text-xl font-bold text-[#1a1a1a]">
                     {exp.company}
                   </h3>
-                  {exp.icon && (
-                    <div className="w-8 h-8 bg-[#1a1a1a] rounded-full flex items-center justify-center text-white">
-                      {exp.icon}
-                    </div>
+                  {exp.href && (
+                    <Link
+                      href={exp.href}
+                      className="w-8 h-8 border border-[#e5e5e5] rounded-full flex items-center justify-center text-[#7C3AED] hover:bg-[#7C3AED] hover:text-white hover:border-[#7C3AED] transition-all duration-300"
+                    >
+                      <ArrowUpRight className="w-4 h-4" />
+                    </Link>
                   )}
                 </div>
                 <p className="text-sm text-[#666] leading-relaxed max-w-xl">
                   {exp.description}
                 </p>
+                {exp.list && exp.list.length > 0 && (
+                  <ul className="list-disc list-inside text-sm text-[#666] leading-relaxed max-w-xl mt-4">
+                    {exp.list.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           ))}
