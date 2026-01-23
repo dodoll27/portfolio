@@ -22,11 +22,8 @@ export function DashboardWidgets() {
       .catch((err) => console.error("Failed to fetch Strava data:", err));
   }, []);
   return (
-    <section
-      id="pulse"
-      className="px-6 md:px-12 py-16 bg-[#FAF9F6] border-t border-[#e5e5e5]"
-    >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section id="pulse" className="px-6 md:px-12 bg-[#FAF9F6] ">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-[#e5e5e5] py-16">
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-[#e5e5e5]">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-2">

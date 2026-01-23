@@ -103,7 +103,7 @@ export default function NativeSpacesPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
             <h2 className="text-xs tracking-widest text-[#999] mb-4">
-              ABOUT THE COMPANY
+              THE LORE
             </h2>
           </div>
           <div className="md:col-span-8">
