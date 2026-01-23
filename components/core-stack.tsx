@@ -14,7 +14,7 @@ const designSystems = [
 
 export function CoreStack() {
   return (
-    <section id="skills" className="px-6 md:px-12 py-16 bg-[#f5f5f0]">
+    <section id="skills" className="px-6 md:px-12 py-16 bg-[#FAF9F6]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-[#7C3AED] mb-2">
