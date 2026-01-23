@@ -21,8 +21,6 @@ export function DashboardWidgets() {
       })
       .catch((err) => console.error("Failed to fetch Strava data:", err));
   }, []);
-
-  console.log("YTD Distance in component:", ytdDistance);
   return (
     <section
       id="pulse"
@@ -58,8 +56,8 @@ export function DashboardWidgets() {
           </div>
 
           <div className="flex items-center justify-between mt-4 text-xs text-[#999]">
-            <span>WEEKLY TOTAL</span>
-            <span>GOAL: 50KM</span>
+            <span>NEXT RACE</span>
+            <span>10KM APR 19</span>
           </div>
         </div>
 
