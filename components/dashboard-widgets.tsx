@@ -1,17 +1,34 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Zap, Diamond } from "lucide-react";
+import { Zap, GitCommit } from "lucide-react";
 
-const audioTracks = [
-  { title: "Synthetise", artist: "THE MIDNIGHT", icon: "🎵" },
-  { title: "LoFi Coding", artist: "CHILL HOP", icon: "🎧" },
-  { title: "Deep House 2024", artist: "VARIOUS ARTISTS", icon: "🎶" },
-  { title: "Analog Dreams", artist: "SYNTHWAVE COLLECTIVE", icon: "🌙" },
-];
+type ContributionDay = {
+  contributionCount: number;
+  date: string;
+};
+
+type ContributionWeek = {
+  contributionDays: ContributionDay[];
+};
+
+type GitHubData = {
+  publicRepos: number;
+  weeks: ContributionWeek[];
+  totalContributions: number;
+};
+
+function getContributionColor(count: number): string {
+  if (count === 0) return "bg-[#F3F4F6]";
+  if (count <= 2) return "bg-[#E9D5FF]";
+  if (count <= 5) return "bg-[#C4B5FD]";
+  if (count <= 8) return "bg-[#A78BFA]";
+  return "bg-[#7C3AED]";
+}
 
 export function DashboardWidgets() {
   const [ytdDistance, setYtdDistance] = useState<number | null>(null);
+  const [githubData, setGithubData] = useState<GitHubData | null>(null);
 
   useEffect(() => {
     fetch("/api/strava")
@@ -20,6 +37,13 @@ export function DashboardWidgets() {
         setYtdDistance(data.ytdDistance ?? null);
       })
       .catch((err) => console.error("Failed to fetch Strava data:", err));
+
+    fetch("/api/github")
+      .then((res) => res.json())
+      .then((data) => {
+        setGithubData(data);
+      })
+      .catch((err) => console.error("Failed to fetch GitHub data:", err));
   }, []);
   return (
     <section id="pulse" className="px-6 md:px-12 bg-[#FAF9F6] ">
@@ -58,38 +82,64 @@ export function DashboardWidgets() {
           </div>
         </div>
 
-        {/* Audio Stream Widget */}
+        {/* GitHub Activity Widget */}
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-[#e5e5e5]">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-2">
+              <GitCommit className="w-4 h-4 text-[#7C3AED]" />
               <span className="text-sm font-semibold text-[#1a1a1a]">
-                AUDIO STREAM
-              </span>
-              <span className="text-xs bg-[#DCFCE7] text-[#16A34A] px-2 py-0.5 rounded-full">
-                ● LISTENING NOW
+                PROOF I WRITE CODE
               </span>
             </div>
-            <Diamond className="w-4 h-4 text-[#999]" />
+            {githubData && (
+              <span className="text-xs bg-[#F3F4F6] text-[#6B7280] px-2 py-0.5 rounded-full">
+                {githubData.publicRepos} REPOS
+              </span>
+            )}
           </div>
 
-          <div className="grid grid-cols-2 gap-3">
-            {audioTracks.map((track, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-3 p-3 bg-[#FAFAFA] rounded-xl hover:bg-[#f0f0f0] transition-colors cursor-pointer"
-              >
-                <div className="w-10 h-10 bg-[#E9D5FF] rounded-lg flex items-center justify-center text-lg">
-                  {track.icon}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-[#1a1a1a] truncate">
-                    {track.title}
-                  </p>
-                  <p className="text-xs text-[#999] truncate">{track.artist}</p>
+          {githubData && (
+            <>
+              <div className="mb-4">
+                <p className="text-xs text-[#999] mb-1">THIS YEAR</p>
+                <div className="flex items-end gap-2">
+                  <span className="text-4xl font-bold text-[#7C3AED]">
+                    {githubData.totalContributions}
+                  </span>
+                  <span className="text-sm text-[#7C3AED] mb-1">
+                    CONTRIBUTIONS
+                  </span>
                 </div>
               </div>
-            ))}
-          </div>
+
+              <div className="flex gap-[3px] overflow-hidden">
+                {/* Show last 20 weeks as columns - each week starts on Sunday */}
+                {githubData.weeks.slice(-20).map((week, weekIndex) => (
+                  <div key={weekIndex} className="flex flex-col gap-[3px]">
+                    {week.contributionDays.map((day, dayIndex) => (
+                      <div
+                        key={dayIndex}
+                        className={`w-[10px] h-[10px] rounded-sm ${getContributionColor(
+                          day.contributionCount
+                        )}`}
+                        title={`${day.date}: ${day.contributionCount} contributions`}
+                      />
+                    ))}
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex items-center justify-end gap-1 mt-3 text-xs text-[#999]">
+                <span>Less</span>
+                <div className="w-[10px] h-[10px] rounded-sm bg-[#F3F4F6]" />
+                <div className="w-[10px] h-[10px] rounded-sm bg-[#E9D5FF]" />
+                <div className="w-[10px] h-[10px] rounded-sm bg-[#C4B5FD]" />
+                <div className="w-[10px] h-[10px] rounded-sm bg-[#A78BFA]" />
+                <div className="w-[10px] h-[10px] rounded-sm bg-[#7C3AED]" />
+                <span>More</span>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </section>

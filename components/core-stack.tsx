@@ -10,7 +10,7 @@ const frameworks = [
   { name: "Tailwind CSS", tag: "UI" },
 ];
 
-const tools = [
+const tools: Array<{ name: string; tag: string; note: string | null }> = [
   { name: "Figma", tag: "DESIGN", note: null },
   { name: "GitHub", tag: "OPS", note: null },
   { name: "Postman", tag: "API", note: null },
@@ -61,7 +61,7 @@ export function CoreStack() {
                   </div>
                   {"note" in item && item.note && (
                     <p className="text-xs text-[#bbb] italic mt-1.5 ml-5">
-                      {item.note}
+                      {item.note as string}
                     </p>
                   )}
                 </li>

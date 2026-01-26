@@ -2,7 +2,7 @@ const education = [
   {
     period: "2023 - 2026",
     title: "Software Architect, Application Development RNCP",
-    level: "Level 7",
+    level: "RNCP Level 7",
     institution: "Epitech",
     details: [
       "Website development in HTML/CSS/JS, React, NextJs",
