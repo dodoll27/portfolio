@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export function Header() {
   return (
@@ -15,21 +15,38 @@ export function Header() {
       </Link>
 
       <nav className="hidden md:flex items-center gap-8">
-        <Link href="#experience" className="text-sm font-medium text-[#1a1a1a] tracking-wide hover:opacity-70">
+        <Link
+          href="#experience"
+          className="text-sm font-medium text-[#1a1a1a] tracking-wide hover:opacity-70"
+        >
           EXPERIENCE
         </Link>
-        <Link href="#work" className="text-sm font-medium text-[#1a1a1a] tracking-wide hover:opacity-70">
+        {/* <Link href="#work" className="text-sm font-medium text-[#1a1a1a] tracking-wide hover:opacity-70">
           WORK
+        </Link> */}
+        <Link
+          href="#uni"
+          className="text-sm font-medium text-[#1a1a1a] tracking-wide hover:opacity-70"
+        >
+          UNI
         </Link>
-        <Link href="#pulse" className="text-sm font-medium text-[#1a1a1a] tracking-wide hover:opacity-70">
-          PULSE
-        </Link>
-        <Link href="#skills" className="text-sm font-medium text-[#1a1a1a] tracking-wide hover:opacity-70">
+        <Link
+          href="#skills"
+          className="text-sm font-medium text-[#1a1a1a] tracking-wide hover:opacity-70"
+        >
           SKILLS
+        </Link>
+        <Link
+          href="#pulse"
+          className="text-sm font-medium text-[#1a1a1a] tracking-wide hover:opacity-70"
+        >
+          PULSE
         </Link>
       </nav>
 
-      <Button className="bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-sm px-5 py-2 rounded-full">Say Hello</Button>
+      <Button className="bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-sm px-5 py-2 rounded-full">
+        Say Hello
+      </Button>
     </header>
-  )
+  );
 }

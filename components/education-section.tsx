@@ -25,7 +25,10 @@ const education = [
 
 export function EducationSection() {
   return (
-    <section className="px-6 md:px-12 pb-16 bg-[#FAF9F6] border-x border-[#e5e5e5]">
+    <section
+      className="px-6 md:px-12 pb-16 bg-[#FAF9F6] border-x border-[#e5e5e5]"
+      id="uni"
+    >
       <div className="mx-auto flex gap-12 justify-between border-l border-y border-[#e5e5e5] pl-6 md:pl-12 max-w-7xl">
         <div className="py-8">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] leading-tight mb-2">
@@ -45,12 +48,12 @@ export function EducationSection() {
               className={`${index !== 0 ? "border-t border-[#e5e5e5]" : ""} flex`}
             >
               <div
-                className="border-l border-[#e5e5e5] p-6 text-5xl font-bold text-[#FAF9F6] select-none hidden lg:flex items-center"
+                className="border-l border-[#e5e5e5] p-6 text-5xl font-bold text-[#FAF9F6] select-none hidden lg:flex items-center w-40"
                 style={{ WebkitTextStroke: "1px #e5e5e5" }}
               >
                 {edu.period.slice(0, 4)}
               </div>
-              <div className="border-x border-[#e5e5e5] p-6">
+              <div className="border-x border-[#e5e5e5] p-6 w-full">
                 <p className="text-xs tracking-widest text-[#7C3AED] mb-1 font-medium">
                   {edu.level} | {edu.institution.toUpperCase()}
                 </p>

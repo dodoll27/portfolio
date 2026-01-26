@@ -11,28 +11,35 @@ export const metadata: Metadata = {
 
 const contributions = [
   {
-    label: "PRODUCT DEVELOPMENT",
+    label: "V2 PLATFORM BUILD",
     detail:
-      "Built and shipped user-facing features across the full stack, from database schema to polished UI components.",
+      "Built core features for the V2 marketplace — venue landing pages, blog system, and full responsive implementation across the site.",
+  },
+  {
+    label: "MIGRATION & NEW FEATURES",
+    detail:
+      "Worked on the V1 to V2 migration while simultaneously shipping new features in Next.js, TypeScript, Tailwind CSS, tRPC, and PostgreSQL.",
+  },
+  {
+    label: "ON-SITE DEV",
+    detail:
+      "Sole on-site developer in the dev team, bridging remote engineers with the on-site team for product and design decisions.",
   },
   {
     label: "USER RESEARCH",
     detail:
       "Gathered and synthesized user feedback to drive product decisions and validate feature direction.",
   },
-  {
-    label: "CROSS-FUNCTIONAL COLLABORATION",
-    detail:
-      "Worked closely with designers, PMs, and other engineers to deliver cohesive digital experiences.",
-  },
-  {
-    label: "BACKLOG & PRIORITIES",
-    detail:
-      "Helped define requirements and prioritize features to keep the team focused on what matters most.",
-  },
 ];
 
-const stack = ["TypeScript", "React", "Next.js", "tRPC", "Tailwind CSS"];
+const stack = [
+  "TypeScript",
+  "React",
+  "Next.js",
+  "tRPC",
+  "Tailwind CSS",
+  "PostgreSQL",
+];
 
 export default function NativeSpacesPage() {
   return (
@@ -103,7 +110,7 @@ export default function NativeSpacesPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
             <h2 className="text-xs tracking-widest text-[#999] mb-4">
-              THE LORE
+              ABOUT THE COMPANY
             </h2>
           </div>
           <div className="md:col-span-8">
@@ -196,21 +203,27 @@ export default function NativeSpacesPage() {
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] mt-2 shrink-0" />
                 <span className="text-sm text-[#1a1a1a] leading-relaxed">
-                  Shipped production features used by real users
+                  Shipped venue pages and blog system now live on the platform
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] mt-2 shrink-0" />
                 <span className="text-sm text-[#1a1a1a] leading-relaxed">
-                  Maintained high code quality through thorough reviews and
-                  shared ownership practices
+                  Delivered full responsive implementation across the entire
+                  site
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] mt-2 shrink-0" />
                 <span className="text-sm text-[#1a1a1a] leading-relaxed">
-                  Balanced shipping speed with long-term maintainability across
-                  multiple product surfaces
+                  Successfully navigated V1 to V2 migration without blocking new
+                  feature work
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] mt-2 shrink-0" />
+                <span className="text-sm text-[#1a1a1a] leading-relaxed">
+                  Kept remote and on-site teams aligned on product direction
                 </span>
               </li>
             </ul>

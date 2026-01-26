@@ -8,11 +8,11 @@ const experiences = [
     company: "Native Spaces",
     href: "/experience/native-spaces",
     description:
-      "Collaborated with cross-functional teams to ship quality digital products. Helped define requirements, prioritize features, and manage the backlog to keep everything aligned. Gathered user feedback to make informed decisions and ensure people actually love what we build.",
+      "Built core features for the V2 marketplace platform connecting event organizers with venue owners. Sole on-site developer bridging remote engineers with the product and design teams.",
     list: [
-      "Shipped production features used by real users",
-      "Collaborated in team environments with shared ownership",
-      "Balanced speed with long-term maintainability",
+      "Shipped venue pages, blog system, and full responsive implementation",
+      "Worked on V1 to V2 migration while building new features",
+      "Kept remote and on-site teams aligned on product direction",
     ],
     icon: null,
   },
@@ -27,12 +27,12 @@ export function CVSection() {
       <div className="mx-auto flex gap-12 justify-between border-l border-y border-[#e5e5e5] pl-6 md:pl-12 max-w-7xl">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] leading-tight mb-2 py-8">
-            VERSION
+            MY
             <br />
-            HISTORY
+            VERSION HISTORY
           </h2>
           <p className="text-xs tracking-wider text-[#999] ">
-            EXPERIENCE 2022 - 2026
+            EXPERIENCE 2024 - 2026
           </p>
         </div>
 
