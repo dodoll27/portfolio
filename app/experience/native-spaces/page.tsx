@@ -13,12 +13,12 @@ const contributions = [
   {
     label: "V2 PLATFORM BUILD",
     detail:
-      "Built core features for the V2 marketplace — venue landing pages, blog system, and full responsive implementation across the site.",
+      "Built core features for the V2 marketplace — venue landing pages, blog system, and full responsive implementation across the site to name a few.",
   },
   {
     label: "MIGRATION & NEW FEATURES",
     detail:
-      "Worked on the V1 to V2 migration while simultaneously shipping new features in Next.js, TypeScript, Tailwind CSS, tRPC, and PostgreSQL.",
+      "Built V2 features in Next.js, TypeScript, Tailwind CSS, tRPC, and PostgreSQL while adapting code based on V1 learnings and helping onboard the team to the new platform.",
   },
   {
     label: "ON-SITE DEV",
@@ -39,6 +39,8 @@ const stack = [
   "tRPC",
   "Tailwind CSS",
   "PostgreSQL",
+  "Prisma",
+  "Vercel",
 ];
 
 export default function NativeSpacesPage() {
@@ -145,7 +147,7 @@ export default function NativeSpacesPage() {
       <section className="px-6 md:px-12 ">
         <div className="max-w-7xl mx-auto border-t py-16 border-[#e5e5e5]">
           <h2 className="text-xs tracking-widest text-[#999] mb-10">
-            WHAT I DO
+            MY PART{" "}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#e5e5e5]">
             {contributions.map((item, idx) => (

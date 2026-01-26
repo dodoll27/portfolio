@@ -1,13 +1,17 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { useContactModal } from "@/components/contact-modal";
 
 const socialLinks = [
-  { name: "LINKEDIN", href: "#" },
+  { name: "LINKEDIN", href: "https://linkedin.com/in/teogarzotto" },
   { name: "GITHUB", href: "https://github.com/dodoll27" },
-  { name: "LAYERS", href: "#" },
+  { name: "INSTAGRAM", href: "https://instagram.com/teo.garzotto" },
 ];
 
 export function CTASection() {
+  const { setOpen } = useContactModal();
   return (
     <section className="px-6 md:px-12 py-20 bg-[#1a1a1a]">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
@@ -31,7 +35,10 @@ export function CTASection() {
           </div>
         </div>
 
-        <Button className="bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-lg px-12 py-6 rounded-full h-auto">
+        <Button
+          onClick={() => setOpen(true)}
+          className="bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-lg px-12 py-6 rounded-full h-auto"
+        >
           SAY HELLO
         </Button>
       </div>

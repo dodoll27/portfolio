@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Space_Grotesk, DM_Serif_Display } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { ContactModalProvider } from "@/components/contact-modal"
 import "./globals.css"
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] })
@@ -20,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
-        {children}
+        <ContactModalProvider>
+          {children}
+        </ContactModalProvider>
         <Analytics />
       </body>
     </html>

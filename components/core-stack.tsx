@@ -1,20 +1,31 @@
-const languages = [
+type StackItem = {
+  name: string;
+  tag: string;
+  note?: string | null;
+};
+
+const languages: StackItem[] = [
   { name: "JavaScript / TypeScript", tag: "CORE" },
   { name: "PHP", tag: "BACK" },
   { name: "C++", tag: "SYS" },
 ];
 
-const frameworks = [
+const frameworks: StackItem[] = [
   { name: "React / Next.js", tag: "CORE" },
   { name: "tRPC", tag: "API" },
   { name: "Tailwind CSS", tag: "UI" },
 ];
 
-const tools: Array<{ name: string; tag: string; note: string | null }> = [
-  { name: "Figma", tag: "DESIGN", note: null },
-  { name: "GitHub", tag: "OPS", note: null },
-  { name: "Postman", tag: "API", note: null },
-  { name: "Claude / Claude Code", tag: "AI", note: "ngl this whole portfolio was vibe coded — proof i know how to use it" },
+const tools: StackItem[] = [
+  { name: "Figma", tag: "DESIGN" },
+  { name: "GitHub", tag: "OPS" },
+  { name: "Postman", tag: "API" },
+  { name: "DBeaver", tag: "DB" },
+  {
+    name: "Claude / Claude Code",
+    tag: "AI",
+    note: "ngl this whole portfolio was vibe coded — proof i know how to use it",
+  },
 ];
 
 export function CoreStack() {
@@ -37,9 +48,9 @@ export function CoreStack() {
         </div>
 
         {[
+          { label: "TOOLS", items: tools },
           { label: "LANGUAGES", items: languages },
           { label: "FRAMEWORKS", items: frameworks },
-          { label: "TOOLS", items: tools },
         ].map((category) => (
           <div key={category.label}>
             <h3 className="text-xs tracking-widest text-[#999] mb-6 font-medium">
@@ -59,9 +70,9 @@ export function CoreStack() {
                       {item.tag}
                     </span>
                   </div>
-                  {"note" in item && item.note && (
+                  {item.note && (
                     <p className="text-xs text-[#bbb] italic mt-1.5 ml-5">
-                      {item.note as string}
+                      {item.note}
                     </p>
                   )}
                 </li>
