@@ -1,0 +1,110 @@
+{
+  "header": {
+    "experience": "EXPÉRIENCE",
+    "uni": "ÉTUDES",
+    "skills": "COMPÉTENCES",
+    "pulse": "PULSE",
+    "sayHello": "Me contacter"
+  },
+  "hero": {
+    "tagline": "INGÉNIEURE LOGICIEL, ÉDITION GEN-Z",
+    "title1": "Je construis des",
+    "title2": "écosystèmes numériques.",
+    "description": "Ingénieur logiciel qui aime transformer des idées un peu chaotiques en produits bien structurés. Je travaille sur toute la stack, avec un faible pour la conception de systèmes simples en apparence, mais solides sous le capot. Je fais très attention à l’expérience développeur, aux performances, et à écrire du code que mon futur moi ne détestera pas.",
+    "github": "GitHub"
+  },
+  "cv": {
+    "title1": "VERSION",
+    "title2": "HISTORY",
+    "subtitle": "EXPÉRIENCE 2024 - 2026",
+    "experiences": {
+      "nativeSpaces": {
+        "year": "2026",
+        "label": "DÉVELOPPEUSE LOGICIEL JUNIOR",
+        "company": "Native Spaces",
+        "description": "Développement de fonctionnalités clés pour la V2 de la plateforme marketplace reliant organisateurs d’événements et propriétaires de lieux. Développeuse unique sur site, en lien entre les équipes remote et les pôles produit et design.",
+        "list": [
+          "Livraison des pages lieux, du système de blog et de l’implémentation full responsive",
+          "Migration de la V1 vers la V2 en parallèle du développement de nouvelles fonctionnalités",
+          "Lien entre équipes à distance et sur site autour de la vision produit"
+        ]
+      }
+    }
+  },
+  "education": {
+    "title1": "LE",
+    "title2": "LORE",
+    "subtitle": "FORMATION 2020 - 2026",
+    "entries": {
+      "epitech": {
+        "period": "2023 - 2026",
+        "year": "2023",
+        "title": "Architecte Logiciel, Développement d'Applications RNCP",
+        "level": "RNCP Niveau 7",
+        "institution": "Epitech",
+        "details": [
+          "Développement web en HTML/CSS/JS, React, NextJs",
+          "Développement web, mobile et logiciel",
+          "Développement et implémentation de systèmes IoT",
+          "Méthodologie de projet"
+        ]
+      },
+      "university": {
+        "period": "2020 - 2023",
+        "year": "2020",
+        "title": "Licence en Langues Étrangères Appliquées",
+        "level": "RNCP Niveau 6",
+        "institution": "Université Nice Côte d'Azur",
+        "details": [
+          "Compétences en traduction et linguistique en anglais et espagnol",
+          "Compétences en économie, gestion et communication"
+        ]
+      }
+    }
+  },
+  "stack": {
+    "title": "Stack Technique",
+    "description": "Outils et technologies que j'utilise pour créer des solutions digitales scalables.",
+    "categories": {
+      "tools": "OUTILS",
+      "languages": "LANGAGES",
+      "frameworks": "FRAMEWORKS"
+    },
+    "claudeNote": "j'avoue ce portfolio a été vibe codé"
+  },
+  "widgets": {
+    "strava": {
+      "title": "PREUVE QUE JE VOIS LA LUMIÈRE DU JOUR",
+      "trainingState": "ÉTAT D'ENTRAÎNEMENT",
+      "km": "KM",
+      "nextRace": "PROCHAINE COURSE",
+      "raceDetails": "10KM 19 AVR"
+    },
+    "github": {
+      "title": "PREUVE QUE JE CODE",
+      "repos": "REPOS",
+      "thisYear": "CETTE ANNÉE",
+      "contributions": "CONTRIBUTIONS",
+      "less": "Moins",
+      "more": "Plus"
+    }
+  },
+  "cta": {
+    "title1": "Construisons ensemble",
+    "title2": "le prochain projet.",
+    "sayHello": "ME CONTACTER"
+  },
+  "contact": {
+    "title": "Connectons-nous",
+    "subtitle": "Choisissez votre moyen de contact préféré",
+    "linkedin": "Connectons-nous professionnellement",
+    "github": "Découvrez mon code",
+    "instagram": "Suivez mon parcours",
+    "email": "Envoyez-moi un message",
+    "resume": "Télécharger mon CV"
+  },
+  "footer": {
+    "available": "ACTUELLEMENT DISPONIBLE POUR DES PROJETS",
+    "copyright": "2026 TEO ENGINEERING"
+  }
+}

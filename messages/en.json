@@ -1,0 +1,110 @@
+{
+  "header": {
+    "experience": "EXPERIENCE",
+    "uni": "UNI",
+    "skills": "SKILLS",
+    "pulse": "PULSE",
+    "sayHello": "Say Hello"
+  },
+  "hero": {
+    "tagline": "SOFTWARE ENGINEER, GEN-Z EDITION",
+    "title1": "Crafting Digital",
+    "title2": "Ecosystems.",
+    "description": "I'm a software engineer who likes turning messy ideas into well-structured products. I enjoy working across the stack, but I'm especially into designing systems that are simple on the surface and solid underneath. I care a lot about developer experience, performance, and writing code future-me won't hate.",
+    "github": "GitHub"
+  },
+  "cv": {
+    "title1": "MY",
+    "title2": "VERSION HISTORY",
+    "subtitle": "EXPERIENCE 2024 - 2026",
+    "experiences": {
+      "nativeSpaces": {
+        "year": "2026",
+        "label": "JUNIOR SOFTWARE DEVELOPER",
+        "company": "Native Spaces",
+        "description": "Built core features for the V2 marketplace platform connecting event organizers with venue owners. Sole on-site developer bridging remote engineers with the product and design teams.",
+        "list": [
+          "Shipped venue pages, blog system, and full responsive implementation",
+          "Worked on V1 to V2 migration while building new features",
+          "Kept remote and on-site teams aligned on product direction"
+        ]
+      }
+    }
+  },
+  "education": {
+    "title1": "THE",
+    "title2": "LORE",
+    "subtitle": "EDUCATION",
+    "entries": {
+      "epitech": {
+        "period": "2023 - 2026",
+        "year": "2023",
+        "title": "Software Architect, Application Development RNCP",
+        "level": "RNCP Level 7",
+        "institution": "Epitech",
+        "details": [
+          "Website development in HTML/CSS/JS, React, NextJs",
+          "Web, mobile and software development",
+          "IoT System Development and Implementation",
+          "Project methodology"
+        ]
+      },
+      "university": {
+        "period": "2020 - 2023",
+        "year": "2020",
+        "title": "Bachelor's Degree in Applied Foreign Languages",
+        "level": "RNCP Level 6",
+        "institution": "University of Nice Côte d'Azur",
+        "details": [
+          "Translation and linguistics skills in English and Spanish",
+          "Economics, management and communication skills"
+        ]
+      }
+    }
+  },
+  "stack": {
+    "title": "Core Stack",
+    "description": "Tools and technologies I use to build scalable digital solutions.",
+    "categories": {
+      "tools": "TOOLS",
+      "languages": "LANGUAGES",
+      "frameworks": "FRAMEWORKS"
+    },
+    "claudeNote": "ngl this whole portfolio was vibe coded"
+  },
+  "widgets": {
+    "strava": {
+      "title": "PROOF I TOUCH GRASS",
+      "trainingState": "TRAINING STATE",
+      "km": "KM",
+      "nextRace": "NEXT RACE",
+      "raceDetails": "10KM APR 19"
+    },
+    "github": {
+      "title": "PROOF I WRITE CODE",
+      "repos": "REPOS",
+      "thisYear": "THIS YEAR",
+      "contributions": "CONTRIBUTIONS",
+      "less": "Less",
+      "more": "More"
+    }
+  },
+  "cta": {
+    "title1": "Let's build the",
+    "title2": "next big thing.",
+    "sayHello": "SAY HELLO"
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "subtitle": "Pick your preferred way to reach out",
+    "linkedin": "Let's connect professionally",
+    "github": "Check out my code",
+    "instagram": "Follow my journey",
+    "email": "Drop me a message",
+    "resume": "Download my CV"
+  },
+  "footer": {
+    "available": "CURRENTLY AVAILABLE FOR PROJECTS",
+    "copyright": "2026 TEO ENGINEERING"
+  }
+}

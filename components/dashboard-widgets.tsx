@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import { Zap, GitCommit } from "lucide-react";
 
 type ContributionDay = {
@@ -29,6 +30,7 @@ function getContributionColor(count: number): string {
 export function DashboardWidgets() {
   const [ytdDistance, setYtdDistance] = useState<number | null>(null);
   const [githubData, setGithubData] = useState<GitHubData | null>(null);
+  const t = useTranslations("widgets");
 
   useEffect(() => {
     fetch("/api/strava")
@@ -53,7 +55,7 @@ export function DashboardWidgets() {
             <div className="flex items-center gap-2">
               <Zap className="w-4 h-4 text-[#fc4c02]" />
               <span className="text-sm font-semibold text-[#1a1a1a]">
-                PROOF I TOUCH GRASS
+                {t("strava.title")}
               </span>
             </div>
             <div className="w-6 h-6 bg-[#FEE2E2] rounded-full flex items-center justify-center">
@@ -62,7 +64,7 @@ export function DashboardWidgets() {
           </div>
 
           <div className="mb-4">
-            <p className="text-xs text-[#999] mb-1">TRAINING STATE</p>
+            <p className="text-xs text-[#999] mb-1">{t("strava.trainingState")}</p>
             <div className="flex items-center gap-2">
               <div className="h-2 bg-[#fc4c02] rounded-full w-20" />
               <div className="h-2 bg-[#fac8b3] rounded-full w-8" />
@@ -73,12 +75,12 @@ export function DashboardWidgets() {
             <span className="text-5xl font-bold text-[#fc4c02]">
               {ytdDistance}
             </span>
-            <span className="text-lg text-[#fc4c02] mb-2">KM</span>
+            <span className="text-lg text-[#fc4c02] mb-2">{t("strava.km")}</span>
           </div>
 
           <div className="flex items-center justify-between mt-4 text-xs text-[#999]">
-            <span>NEXT RACE</span>
-            <span>10KM APR 19</span>
+            <span>{t("strava.nextRace")}</span>
+            <span>{t("strava.raceDetails")}</span>
           </div>
         </div>
 
@@ -88,12 +90,12 @@ export function DashboardWidgets() {
             <div className="flex items-center gap-2">
               <GitCommit className="w-4 h-4 text-[#7C3AED]" />
               <span className="text-sm font-semibold text-[#1a1a1a]">
-                PROOF I WRITE CODE
+                {t("github.title")}
               </span>
             </div>
             {githubData && (
               <span className="text-xs bg-[#F3F4F6] text-[#6B7280] px-2 py-0.5 rounded-full">
-                {githubData.publicRepos} REPOS
+                {githubData.publicRepos} {t("github.repos")}
               </span>
             )}
           </div>
@@ -101,13 +103,13 @@ export function DashboardWidgets() {
           {githubData && (
             <>
               <div className="mb-4">
-                <p className="text-xs text-[#999] mb-1">THIS YEAR</p>
+                <p className="text-xs text-[#999] mb-1">{t("github.thisYear")}</p>
                 <div className="flex items-end gap-2">
                   <span className="text-4xl font-bold text-[#7C3AED]">
                     {githubData.totalContributions}
                   </span>
                   <span className="text-sm text-[#7C3AED] mb-1">
-                    CONTRIBUTIONS
+                    {t("github.contributions")}
                   </span>
                 </div>
               </div>
@@ -130,13 +132,13 @@ export function DashboardWidgets() {
               </div>
 
               <div className="flex items-center justify-end gap-1 mt-3 text-xs text-[#999]">
-                <span>Less</span>
+                <span>{t("github.less")}</span>
                 <div className="w-[10px] h-[10px] rounded-sm bg-[#F3F4F6]" />
                 <div className="w-[10px] h-[10px] rounded-sm bg-[#E9D5FF]" />
                 <div className="w-[10px] h-[10px] rounded-sm bg-[#C4B5FD]" />
                 <div className="w-[10px] h-[10px] rounded-sm bg-[#A78BFA]" />
                 <div className="w-[10px] h-[10px] rounded-sm bg-[#7C3AED]" />
-                <span>More</span>
+                <span>{t("github.more")}</span>
               </div>
             </>
           )}
