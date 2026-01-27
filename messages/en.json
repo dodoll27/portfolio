@@ -1,0 +1,148 @@
+{
+  "header": {
+    "experience": "EXPERIENCE",
+    "uni": "UNI",
+    "skills": "SKILLS",
+    "pulse": "PULSE",
+    "sayHello": "Say Hello"
+  },
+  "hero": {
+    "tagline": "SOFTWARE ENGINEER, GEN-Z EDITION",
+    "title1": "Crafting Digital",
+    "title2": "Ecosystems.",
+    "description": "I'm a software engineer who likes turning messy ideas into well-structured products. I enjoy working across the stack, but I'm especially into designing systems that are simple on the surface and solid underneath. I care a lot about developer experience, performance, and writing code future-me won't hate.",
+    "github": "GitHub"
+  },
+  "cv": {
+    "title1": "MY",
+    "title2": "VERSION HISTORY",
+    "subtitle": "EXPERIENCE 2024 - 2026",
+    "experiences": {
+      "nativeSpaces": {
+        "year": "2026",
+        "label": "JUNIOR SOFTWARE DEVELOPER",
+        "company": "Native Spaces",
+        "description": "Built core features for the V2 marketplace platform connecting event organizers with venue owners. Sole on-site developer bridging remote engineers with the product and design teams.",
+        "list": [
+          "Shipped venue pages, blog system, and full responsive implementation",
+          "Worked on V1 to V2 migration while building new features",
+          "Kept remote and on-site teams aligned on product direction"
+        ]
+      }
+    }
+  },
+  "education": {
+    "title1": "THE",
+    "title2": "LORE",
+    "subtitle": "EDUCATION",
+    "entries": {
+      "epitech": {
+        "period": "2023 - 2026",
+        "year": "2023",
+        "title": "Software Architect, Application Development RNCP",
+        "level": "RNCP Level 7",
+        "institution": "Epitech",
+        "details": [
+          "Website development in HTML/CSS/JS, React, NextJs",
+          "Web, mobile and software development",
+          "IoT System Development and Implementation",
+          "Project methodology"
+        ]
+      },
+      "university": {
+        "period": "2020 - 2023",
+        "year": "2020",
+        "title": "Bachelor's Degree in Applied Foreign Languages",
+        "level": "RNCP Level 6",
+        "institution": "University of Nice Côte d'Azur",
+        "details": [
+          "Translation and linguistics skills in English and Spanish",
+          "Economics, management and communication skills"
+        ]
+      }
+    }
+  },
+  "stack": {
+    "title": "Core Stack",
+    "description": "Tools and technologies I use to build scalable digital solutions.",
+    "categories": {
+      "tools": "TOOLS",
+      "languages": "LANGUAGES",
+      "frameworks": "FRAMEWORKS"
+    },
+    "claudeNote": "ngl this whole portfolio was vibe coded"
+  },
+  "widgets": {
+    "strava": {
+      "title": "PROOF I TOUCH GRASS",
+      "trainingState": "TRAINING STATE",
+      "km": "KM",
+      "nextRace": "NEXT RACE",
+      "raceDetails": "10KM APR 19"
+    },
+    "github": {
+      "title": "PROOF I WRITE CODE",
+      "repos": "REPOS",
+      "thisYear": "THIS YEAR",
+      "contributions": "CONTRIBUTIONS",
+      "less": "Less",
+      "more": "More"
+    }
+  },
+  "cta": {
+    "title1": "Let's build the",
+    "title2": "next big thing.",
+    "sayHello": "SAY HELLO"
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "subtitle": "Pick your preferred way to reach out",
+    "linkedin": "Let's connect professionally",
+    "github": "Check out my code",
+    "instagram": "Follow my journey",
+    "email": "Drop me a message",
+    "resume": "Download my CV"
+  },
+  "footer": {
+    "available": "CURRENTLY AVAILABLE FOR PROJECTS",
+    "copyright": "2026 TEO ENGINEERING"
+  },
+  "nativeSpaces": {
+    "back": "Back to portfolio",
+    "period": "2024 — PRESENT",
+    "description": "Native Spaces is an online marketplace enabling event organisers to discover and book unique venues alongside handpicked event suppliers.",
+    "role": "JUNIOR SOFTWARE ENGINEER",
+    "type": "Apprenticeship",
+    "aboutTitle": "ABOUT THE COMPANY",
+    "aboutP1": "is an online marketplace that makes it easy for companies and individuals to book truly unique venues for events such as product launches, company seminars, photoshoots and other. The platform features a curated selection of spaces, from luxury villas and historic châteaux to hidden gardens, boats, and yachts, with options to match different styles and budgets.",
+    "aboutP2": "Native Spaces also supports venue owners with underused properties by helping them showcase their spaces and connect with both national and international clients. The company handles key operational aspects, including event insurance and a secure, streamlined payment system.",
+    "myPart": "MY PART",
+    "contributions": {
+      "0": {
+        "label": "V2 PLATFORM BUILD",
+        "detail": "Built core features for the V2 marketplace — venue landing pages, blog system, and full responsive implementation across the site to name a few."
+      },
+      "1": {
+        "label": "MIGRATION & NEW FEATURES",
+        "detail": "Built V2 features in Next.js, TypeScript, Tailwind CSS, tRPC, and PostgreSQL while adapting code based on V1 learnings and helping onboard the team to the new platform."
+      },
+      "2": {
+        "label": "ON-SITE DEV",
+        "detail": "Sole on-site developer in the dev team, bridging remote engineers with the on-site team for product and design decisions."
+      },
+      "3": {
+        "label": "USER RESEARCH",
+        "detail": "Gathered and synthesized user feedback to drive product decisions and validate feature direction."
+      }
+    },
+    "techTitle": "TECH I WORK WITH",
+    "outcomesTitle": "KEY OUTCOMES",
+    "outcomes": [
+      "Shipped venue pages and blog system now live on the platform",
+      "Delivered full responsive implementation across the entire site",
+      "Successfully navigated V1 to V2 migration without blocking new feature work",
+      "Kept remote and on-site teams aligned on product direction"
+    ],
+    "backShort": "Back"
+  }
+}

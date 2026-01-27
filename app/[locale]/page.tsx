@@ -14,10 +14,10 @@ export default function Home() {
       <Header />
       <HeroSection />
       <CVSection />
-      <SelectedWorks />
-      <DashboardWidgets />
-      <CoreStack />
+      {/* <SelectedWorks /> */}
       <EducationSection />
+      <CoreStack />
+      <DashboardWidgets />
       <CTASection />
       <Footer />
     </main>

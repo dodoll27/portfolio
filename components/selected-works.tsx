@@ -30,8 +30,8 @@ const works = [
 
 export function SelectedWorks() {
   return (
-    <section id="work" className="px-6 md:px-12 py-16 bg-[#FAF9F6] border-t">
-      <div className="max-w-7xl mx-auto">
+    <section id="work" className="px-6 md:px-12">
+      <div className="max-w-7xl mx-auto border-t py-16 bg-[#FAF9F6]">
         <div className="flex items-end justify-between mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a1a]">

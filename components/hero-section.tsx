@@ -1,38 +1,39 @@
 "use client";
 
 import { ArrowUpRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
+  const t = useTranslations("hero");
+
   return (
-    <section className="px-6 md:px-12 py-12 md:py-20 bg-[#FAF9F6]">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-8 ">
+    <section className="px-6 md:px-12 bg-[#FAF9F6] border-[#e5e5e5]">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-4 md:gap-8 border-x border-t py-8 md:py-12 border-[#e5e5e5]">
         <div
-          className="text-[120px] -rotate-90 md:text-[180px] font-bold text-[#FAF9F6] select-none self-center "
+          className="text-[72px] hidden md:flex sm:text-[100px] md:text-[180px] -rotate-90 font-bold text-[#FAF9F6] select-none self-center"
           style={{ WebkitTextStroke: "2px #e5e5e5" }}
         >
           TEO
         </div>
-        <div className="flex-1 ">
+        <div className="flex-1 px-4 md:px-0">
           <p className="text-xs tracking-widest text-[#7C3AED] mb-4 font-medium">
-            SOFTWARE ENGINEER, GEN-Z EDITION
+            {t("tagline")}
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1a1a1a] leading-tight mb-4">
-            Crafting Digital
+            {t("title1")}
             <br />
-            <span className="text-[#7C3AED]">Ecosystems.</span>
+            <span className="text-[#7C3AED]">{t("title2")}</span>
           </h1>
-          <p className="text-[#666] max-w-md mb-8 leading-relaxed">
-            Based in the intersection of robust code and Swiss design
-            principles. Focused on building interfaces that are as functional as
-            they are beautiful.
+          <p className="text-[#666] max-w-xl mb-8 leading-relaxed">
+            {t("description")}
           </p>
           <Button
             variant="outline"
             className="rounded-full px-6 py-2 border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white group bg-transparent"
             onClick={() => window.open("https://github.com/dodoll27", "_blank")}
           >
-            GitHub
+            {t("github")}
             <ArrowUpRight className="ml-2 w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </Button>
         </div>
