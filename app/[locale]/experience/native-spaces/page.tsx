@@ -1,36 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Native Spaces | TEO.",
-  description:
-    "Junior Software Engineer at Native Spaces - Building digital products that people love.",
-};
-
-const contributions = [
-  {
-    label: "V2 PLATFORM BUILD",
-    detail:
-      "Built core features for the V2 marketplace — venue landing pages, blog system, and full responsive implementation across the site to name a few.",
-  },
-  {
-    label: "MIGRATION & NEW FEATURES",
-    detail:
-      "Built V2 features in Next.js, TypeScript, Tailwind CSS, tRPC, and PostgreSQL while adapting code based on V1 learnings and helping onboard the team to the new platform.",
-  },
-  {
-    label: "ON-SITE DEV",
-    detail:
-      "Sole on-site developer in the dev team, bridging remote engineers with the on-site team for product and design decisions.",
-  },
-  {
-    label: "USER RESEARCH",
-    detail:
-      "Gathered and synthesized user feedback to drive product decisions and validate feature direction.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const stack = [
   "TypeScript",
@@ -44,6 +17,8 @@ const stack = [
 ];
 
 export default function NativeSpacesPage() {
+  const t = useTranslations("nativeSpaces");
+
   return (
     <main className="min-h-screen bg-[#FAF9F6]">
       {/* Navigation */}
@@ -54,7 +29,7 @@ export default function NativeSpacesPage() {
             className="inline-flex items-center gap-2 text-sm text-[#666] hover:text-[#7C3AED] transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to portfolio
+            {t("back")}
           </Link>
         </div>
       </nav>
@@ -64,7 +39,7 @@ export default function NativeSpacesPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
           <div className="md:col-span-7">
             <p className="text-xs tracking-widest text-[#7C3AED] mb-3 font-medium">
-              2024 &mdash; PRESENT
+              {t("period")}
             </p>
             <h1 className="text-5xl md:text-7xl font-bold text-[#1a1a1a] leading-[0.9] mb-4">
               Native
@@ -72,9 +47,7 @@ export default function NativeSpacesPage() {
               Spaces
             </h1>
             <p className="text-lg text-[#666] max-w-md leading-relaxed">
-              Native Spaces is an online marketplace enabling event organisers
-              to discover and book unique venues alongside handpicked event
-              suppliers.
+              {t("description")}
             </p>
           </div>
           <div className="md:col-span-5 flex flex-col items-start md:items-end gap-3">
@@ -87,10 +60,10 @@ export default function NativeSpacesPage() {
             />
             <div className="border border-[#e5e5e5] rounded-full px-4 py-2">
               <span className="text-xs tracking-widest text-[#1a1a1a] font-medium">
-                JUNIOR SOFTWARE ENGINEER
+                {t("role")}
               </span>
             </div>
-            <p className="text-xs text-[#999] md:text-right">Apprenticeship</p>
+            <p className="text-xs text-[#999] md:text-right">{t("type")}</p>
           </div>
         </div>
       </section>
@@ -112,7 +85,7 @@ export default function NativeSpacesPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
             <h2 className="text-xs tracking-widest text-[#999] mb-4">
-              ABOUT THE COMPANY
+              {t("aboutTitle")}
             </h2>
           </div>
           <div className="md:col-span-8">
@@ -125,19 +98,10 @@ export default function NativeSpacesPage() {
               >
                 Native Spaces
               </a>{" "}
-              is an online marketplace that makes it easy for companies and
-              individuals to book truly unique venues for events such as product
-              launches, company seminars, photoshoots and other. The platform
-              features a curated selection of spaces, from luxury villas and
-              historic châteaux to hidden gardens, boats, and yachts, with
-              options to match different styles and budgets.
+              {t("aboutP1")}
             </p>
             <p className="text-base text-[#666] leading-relaxed">
-              Native Spaces also supports venue owners with underused properties
-              by helping them showcase their spaces and connect with both
-              national and international clients. The company handles key
-              operational aspects, including event insurance and a secure,
-              streamlined payment system.
+              {t("aboutP2")}
             </p>
           </div>
         </div>
@@ -147,10 +111,10 @@ export default function NativeSpacesPage() {
       <section className="px-6 md:px-12 ">
         <div className="max-w-7xl mx-auto border-t py-16 border-[#e5e5e5]">
           <h2 className="text-xs tracking-widest text-[#999] mb-10">
-            MY PART{" "}
+            {t("myPart")}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#e5e5e5]">
-            {contributions.map((item, idx) => (
+            {[0, 1, 2, 3].map((idx) => (
               <div key={idx} className="bg-[#FAF9F6] p-8">
                 <div className="flex items-start gap-4">
                   <span className="text-xs text-[#7C3AED] font-mono mt-0.5">
@@ -158,10 +122,10 @@ export default function NativeSpacesPage() {
                   </span>
                   <div>
                     <h3 className="text-xs tracking-widest text-[#1a1a1a] font-medium mb-2">
-                      {item.label}
+                      {t(`contributions.${idx}.label`)}
                     </h3>
                     <p className="text-sm text-[#666] leading-relaxed">
-                      {item.detail}
+                      {t(`contributions.${idx}.detail`)}
                     </p>
                   </div>
                 </div>
@@ -176,7 +140,7 @@ export default function NativeSpacesPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 border-t py-16 border-[#e5e5e5]">
           <div className="md:col-span-4">
             <h2 className="text-xs tracking-widest text-[#999] mb-4">
-              TECH I WORK WITH
+              {t("techTitle")}
             </h2>
           </div>
           <div className="md:col-span-8 flex flex-wrap gap-3">
@@ -197,37 +161,19 @@ export default function NativeSpacesPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 py-16 border-t border-[#e5e5e5]">
           <div className="md:col-span-4">
             <h2 className="text-xs tracking-widest text-[#999] mb-4">
-              KEY OUTCOMES
+              {t("outcomesTitle")}
             </h2>
           </div>
           <div className="md:col-span-8">
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] mt-2 shrink-0" />
-                <span className="text-sm text-[#1a1a1a] leading-relaxed">
-                  Shipped venue pages and blog system now live on the platform
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] mt-2 shrink-0" />
-                <span className="text-sm text-[#1a1a1a] leading-relaxed">
-                  Delivered full responsive implementation across the entire
-                  site
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] mt-2 shrink-0" />
-                <span className="text-sm text-[#1a1a1a] leading-relaxed">
-                  Successfully navigated V1 to V2 migration without blocking new
-                  feature work
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] mt-2 shrink-0" />
-                <span className="text-sm text-[#1a1a1a] leading-relaxed">
-                  Kept remote and on-site teams aligned on product direction
-                </span>
-              </li>
+              {[0, 1, 2, 3].map((idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] mt-2 shrink-0" />
+                  <span className="text-sm text-[#1a1a1a] leading-relaxed">
+                    {t(`outcomes.${idx}`)}
+                  </span>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -240,7 +186,7 @@ export default function NativeSpacesPage() {
             href="/#experience"
             className="text-sm text-[#666] hover:text-[#7C3AED] transition-colors"
           >
-            &larr; Back
+            &larr; {t("backShort")}
           </Link>
           <p className="text-xs text-[#999]">TEO.</p>
         </div>

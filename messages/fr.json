@@ -106,5 +106,43 @@
   "footer": {
     "available": "ACTUELLEMENT DISPONIBLE POUR DES PROJETS",
     "copyright": "2026 TEO ENGINEERING"
+  },
+  "nativeSpaces": {
+    "back": "Retour au portfolio",
+    "period": "2024 — AUJOURD'HUI",
+    "description": "Native Spaces est une marketplace en ligne permettant aux organisateurs d'événements de découvrir et réserver des lieux uniques ainsi que des prestataires événementiels triés sur le volet.",
+    "role": "DÉVELOPPEUSE LOGICIEL JUNIOR",
+    "type": "Alternance",
+    "aboutTitle": "À PROPOS DE L'ENTREPRISE",
+    "aboutP1": "est une marketplace en ligne qui permet aux entreprises et aux particuliers de réserver des lieux véritablement uniques pour des événements tels que des lancements de produits, des séminaires d'entreprise, des shootings photo et autres. La plateforme propose une sélection de lieux allant des villas de luxe et châteaux historiques aux jardins cachés, bateaux et yachts, avec des options adaptées à différents styles et budgets.",
+    "aboutP2": "Native Spaces accompagne également les propriétaires de lieux sous-exploités en les aidant à mettre en valeur leurs espaces et à se connecter avec des clients nationaux et internationaux. L'entreprise gère les aspects opérationnels clés, notamment l'assurance événementielle et un système de paiement sécurisé et simplifié.",
+    "myPart": "MA CONTRIBUTION",
+    "contributions": {
+      "0": {
+        "label": "CONSTRUCTION PLATEFORME V2",
+        "detail": "Développement des fonctionnalités principales de la plateforme V2 — pages de lieux, système de blog et implémentation responsive complète sur l'ensemble du site."
+      },
+      "1": {
+        "label": "MIGRATION & NOUVELLES FONCTIONNALITÉS",
+        "detail": "Développement des fonctionnalités V2 en Next.js, TypeScript, Tailwind CSS, tRPC et PostgreSQL tout en adaptant le code basé sur les retours de la V1 et en aidant à l'onboarding de l'équipe sur la nouvelle plateforme."
+      },
+      "2": {
+        "label": "DEV SUR SITE",
+        "detail": "Seule développeuse sur site dans l'équipe dev, faisant le lien entre les ingénieurs à distance et l'équipe sur site pour les décisions produit et design."
+      },
+      "3": {
+        "label": "RECHERCHE UTILISATEUR",
+        "detail": "Collecte et synthèse des retours utilisateurs pour orienter les décisions produit et valider la direction des fonctionnalités."
+      }
+    },
+    "techTitle": "TECHNOLOGIES UTILISÉES",
+    "outcomesTitle": "RÉSULTATS CLÉS",
+    "outcomes": [
+      "Livraison des pages lieux et du système de blog maintenant en production",
+      "Implémentation responsive complète sur l'ensemble du site",
+      "Migration V1 vers V2 réussie sans bloquer le développement de nouvelles fonctionnalités",
+      "Coordination entre équipes à distance et sur site autour de la vision produit"
+    ],
+    "backShort": "Retour"
   }
 }
