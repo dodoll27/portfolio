@@ -9,14 +9,14 @@ export function HeroSection() {
 
   return (
     <section className="px-6 md:px-12 bg-[#FAF9F6] border-[#e5e5e5]">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-8 border-x border-t py-12 border-[#e5e5e5]">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-4 md:gap-8 border-x border-t py-8 md:py-12 border-[#e5e5e5]">
         <div
-          className="text-[120px] -rotate-90 md:text-[180px] font-bold text-[#FAF9F6] select-none self-center "
+          className="text-[72px] hidden md:flex sm:text-[100px] md:text-[180px] -rotate-90 font-bold text-[#FAF9F6] select-none self-center"
           style={{ WebkitTextStroke: "2px #e5e5e5" }}
         >
           TEO
         </div>
-        <div className="flex-1 ">
+        <div className="flex-1 px-4 md:px-0">
           <p className="text-xs tracking-widest text-[#7C3AED] mb-4 font-medium">
             {t("tagline")}
           </p>

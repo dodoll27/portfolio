@@ -114,14 +114,13 @@ export function DashboardWidgets() {
                 </div>
               </div>
 
-              <div className="flex gap-[3px] overflow-hidden">
-                {/* Show last 20 weeks as columns - each week starts on Sunday */}
+              <div className="flex gap-[3px] overflow-x-auto">
                 {githubData.weeks.slice(-20).map((week, weekIndex) => (
                   <div key={weekIndex} className="flex flex-col gap-[3px]">
                     {week.contributionDays.map((day, dayIndex) => (
                       <div
                         key={dayIndex}
-                        className={`w-[10px] h-[10px] rounded-sm ${getContributionColor(
+                        className={`w-[8px] h-[8px] sm:w-[10px] sm:h-[10px] rounded-sm ${getContributionColor(
                           day.contributionCount
                         )}`}
                         title={`${day.date}: ${day.contributionCount} contributions`}
@@ -133,11 +132,11 @@ export function DashboardWidgets() {
 
               <div className="flex items-center justify-end gap-1 mt-3 text-xs text-[#999]">
                 <span>{t("github.less")}</span>
-                <div className="w-[10px] h-[10px] rounded-sm bg-[#F3F4F6]" />
-                <div className="w-[10px] h-[10px] rounded-sm bg-[#E9D5FF]" />
-                <div className="w-[10px] h-[10px] rounded-sm bg-[#C4B5FD]" />
-                <div className="w-[10px] h-[10px] rounded-sm bg-[#A78BFA]" />
-                <div className="w-[10px] h-[10px] rounded-sm bg-[#7C3AED]" />
+                <div className="w-[8px] h-[8px] sm:w-[10px] sm:h-[10px] rounded-sm bg-[#F3F4F6]" />
+                <div className="w-[8px] h-[8px] sm:w-[10px] sm:h-[10px] rounded-sm bg-[#E9D5FF]" />
+                <div className="w-[8px] h-[8px] sm:w-[10px] sm:h-[10px] rounded-sm bg-[#C4B5FD]" />
+                <div className="w-[8px] h-[8px] sm:w-[10px] sm:h-[10px] rounded-sm bg-[#A78BFA]" />
+                <div className="w-[8px] h-[8px] sm:w-[10px] sm:h-[10px] rounded-sm bg-[#7C3AED]" />
                 <span>{t("github.more")}</span>
               </div>
             </>

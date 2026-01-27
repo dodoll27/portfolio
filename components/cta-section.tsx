@@ -16,8 +16,8 @@ export function CTASection() {
   const t = useTranslations("cta");
 
   return (
-    <section className="px-6 md:px-12 py-20 bg-[#1a1a1a]">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+    <section className="px-6 md:px-12 py-12 md:py-20 bg-[#1a1a1a]">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
         <div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8">
             {t("title1")}
@@ -42,7 +42,7 @@ export function CTASection() {
 
         <Button
           onClick={() => setOpen(true)}
-          className="bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-lg px-12 py-6 rounded-full h-auto"
+          className="bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-lg px-12 py-6 rounded-full h-auto w-full md:w-auto"
         >
           {t("sayHello")}
         </Button>

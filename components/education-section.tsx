@@ -12,8 +12,8 @@ export function EducationSection() {
       className="px-6 md:px-12 pb-16 bg-[#FAF9F6] border-x border-[#e5e5e5]"
       id="uni"
     >
-      <div className="mx-auto flex gap-12 justify-between border-l border-y border-[#e5e5e5] pl-6 md:pl-12 max-w-7xl">
-        <div className="py-8">
+      <div className="mx-auto flex flex-col md:flex-row gap-6 md:gap-12 md:justify-between border-l border-y border-[#e5e5e5] pl-6 md:pl-12 max-w-7xl">
+        <div className="py-8 shrink-0">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] leading-tight mb-2">
             {t("title1")}
             <br />
@@ -34,7 +34,7 @@ export function EducationSection() {
               >
                 {t(`entries.${key}.year`)}
               </div>
-              <div className="border-x border-[#e5e5e5] p-6 w-full">
+              <div className="border-x border-[#e5e5e5] p-4 md:p-6 w-full">
                 <p className="text-xs tracking-widest text-[#7C3AED] mb-1 font-medium">
                   {t(`entries.${key}.level`)} |{" "}
                   {t(`entries.${key}.institution`).toUpperCase()}

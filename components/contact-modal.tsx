@@ -83,7 +83,7 @@ function ContactModalContent() {
   const t = useTranslations("contact");
 
   return (
-    <DialogContent className="bg-[#FAF9F6] border-[#e5e5e5] max-w-md">
+    <DialogContent className="bg-[#FAF9F6] border-[#e5e5e5] max-w-[calc(100vw-2rem)] sm:max-w-md mx-auto">
       <DialogHeader>
         <DialogTitle className="text-2xl font-bold text-[#1a1a1a]">
           {t("title")}
