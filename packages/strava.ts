@@ -1,5 +1,3 @@
-import 'dotenv/config';
-
 const STRAVA_TOKEN_URL = 'https://www.strava.com/oauth/token';
 
 async function getAccessToken(): Promise<string> {
