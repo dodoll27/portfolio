@@ -14,7 +14,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <CVSection />
-      {/* <SelectedWorks /> */}
+      <SelectedWorks />
       <EducationSection />
       <CoreStack />
       <DashboardWidgets />

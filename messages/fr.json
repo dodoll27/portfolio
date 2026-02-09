@@ -144,5 +144,50 @@
       "Coordination entre équipes à distance et sur site autour de la vision produit"
     ],
     "backShort": "Retour"
+  },
+  "mangeBien": {
+    "back": "Retour au portfolio",
+    "period": "2024 — 2025",
+    "description": "Une application mobile de gestion de recettes et de découverte sociale construite avec Laravel et React Native.",
+    "role": "DÉVELOPPEUR FULLSTACK",
+    "type": "Projet Personnel",
+    "aboutTitle": "À PROPOS DU PROJET",
+    "aboutP1": "Mange Bien est une application mobile multiplateforme qui permet aux utilisateurs de découvrir, créer et partager des recettes. Elle combine des fonctionnalités sociales comme suivre des chefs et aimer des recettes avec des outils pratiques pour gérer sa propre collection de recettes.",
+    "aboutP2": "L'application propose l'authentification utilisateur, la création de recettes avec photos, le suivi nutritionnel, la découverte sociale de chefs en vedette et de recettes tendances, des collections pour organiser ses favoris, et des contrôles de confidentialité pour garder ses recettes privées ou les partager publiquement.",
+    "featuresTitle": "FONCTIONNALITÉS CLÉS",
+    "features": {
+      "0": {
+        "label": "AUTHENTIFICATION",
+        "detail": "Inscription/connexion sécurisée avec authentification par token via Laravel Sanctum et Expo Secure Store pour le stockage des identifiants."
+      },
+      "1": {
+        "label": "GESTION DES RECETTES",
+        "detail": "Création de recettes avec ingrédients, instructions et photos. Intégration Cloudinary pour l'upload et le stockage des images."
+      },
+      "2": {
+        "label": "DÉCOUVERTE SOCIALE",
+        "detail": "Parcourir les chefs en vedette et les recettes tendances. Suivre d'autres utilisateurs et aimer des recettes pour construire son fil."
+      },
+      "3": {
+        "label": "COLLECTIONS & CONFIDENTIALITÉ",
+        "detail": "Organiser et sauvegarder ses recettes favorites en collections. Contrôles de confidentialité pour garder les recettes privées ou les partager."
+      }
+    },
+    "techTitle": "STACK TECHNIQUE",
+    "architectureTitle": "POINTS D'ARCHITECTURE",
+    "architecture": [
+      "API type-safe avec validation des requêtes et frontend TypeScript typé",
+      "Relations many-to-many pour les associations flexibles recette-ingrédient avec données pivot",
+      "Colonnes JSON pour stocker les données nutritionnelles complexes",
+      "Catégorisation par énumérations pour les types d'ingrédients (Légume, Fruit, Protéine, Produit laitier, Céréale, Épice)"
+    ],
+    "learnedTitle": "CE QUE J'AI APPRIS",
+    "learned": [
+      "Construire des APIs RESTful avec Laravel et les consommer en React Native",
+      "Implémenter des flux d'authentification sécurisés pour applications mobiles",
+      "Gérer des relations de base de données complexes (many-to-many avec données pivot)",
+      "Mettre en place des pipelines CI/CD avec GitHub Actions pour le backend et le mobile"
+    ],
+    "backShort": "Retour"
   }
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const works = [
@@ -7,24 +8,28 @@ const works = [
     category: "2024 / FULLSTACK DEVELOPMENT",
     image: "https://picsum.photos/seed/aegis/800/600",
     size: "large",
+    href: null,
   },
   {
-    title: "Mono-Lab",
-    category: "2023 / UI DESIGN",
-    image: "https://picsum.photos/seed/monolab/600/500",
+    title: "Mange Bien",
+    category: "2024 / MOBILE APP",
+    image: "https://picsum.photos/seed/mangebien/600/500",
     size: "medium",
+    href: "/experience/mange-bien",
   },
   {
     title: "Kernel Core",
     category: "2023 / ARCHITECTURE",
     image: "https://picsum.photos/seed/kernel/500/550",
     size: "medium",
+    href: null,
   },
   {
     title: "Global Mesh",
     category: "2022 / DEVOPS",
     image: "https://picsum.photos/seed/globalmesh/700/550",
     size: "medium",
+    href: null,
   },
 ];
 
@@ -69,8 +74,11 @@ export function SelectedWorks() {
             </div>
           </div>
 
-          {/* Mono-Lab */}
-          <div className="md:col-span-4 group cursor-pointer">
+          {/* Mange Bien */}
+          <Link
+            href={works[1].href!}
+            className="md:col-span-4 group cursor-pointer"
+          >
             <div className="relative overflow-hidden rounded-xl bg-[#f0f0f0]">
               <Image
                 src={works[1].image || "/placeholder.svg"}
@@ -80,15 +88,18 @@ export function SelectedWorks() {
                 className="w-full h-[250px] md:h-[400px] object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <div className="mt-4">
-              <p className="text-xs tracking-wider text-[#7C3AED] mb-1">
-                {works[1].category}
-              </p>
-              <h3 className="text-lg font-bold text-[#1a1a1a]">
-                {works[1].title}
-              </h3>
+            <div className="flex items-center justify-between mt-4">
+              <div>
+                <p className="text-xs tracking-wider text-[#7C3AED] mb-1">
+                  {works[1].category}
+                </p>
+                <h3 className="text-lg font-bold text-[#1a1a1a]">
+                  {works[1].title}
+                </h3>
+              </div>
+              <ArrowRight className="w-5 h-5 text-[#1a1a1a] group-hover:translate-x-1 transition-transform" />
             </div>
-          </div>
+          </Link>
 
           {/* Kernel Core */}
           <div className="md:col-span-5 group cursor-pointer">

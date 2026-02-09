@@ -144,5 +144,50 @@
       "Kept remote and on-site teams aligned on product direction"
     ],
     "backShort": "Back"
+  },
+  "mangeBien": {
+    "back": "Back to portfolio",
+    "period": "2024 — 2025",
+    "description": "A recipe management and social discovery mobile app built with Laravel and React Native.",
+    "role": "FULLSTACK DEVELOPER",
+    "type": "Personal Project",
+    "aboutTitle": "ABOUT THE PROJECT",
+    "aboutP1": "Mange Bien is a cross-platform mobile application that lets users discover, create, and share recipes. It combines social features like following chefs and liking recipes with practical tools for managing your own recipe collection.",
+    "aboutP2": "The app features user authentication, recipe creation with photos, nutritional tracking, social discovery of featured chefs and trending recipes, collections to organize favorites, and privacy controls to keep recipes private or share them publicly.",
+    "featuresTitle": "KEY FEATURES",
+    "features": {
+      "0": {
+        "label": "USER AUTHENTICATION",
+        "detail": "Secure signup/login with token-based authentication using Laravel Sanctum and Expo Secure Store for credential storage."
+      },
+      "1": {
+        "label": "RECIPE MANAGEMENT",
+        "detail": "Create recipes with ingredients, instructions, and photos. Cloudinary integration for image uploads and storage."
+      },
+      "2": {
+        "label": "SOCIAL DISCOVERY",
+        "detail": "Browse featured chefs and trending recipes. Follow other users and like recipes to build your feed."
+      },
+      "3": {
+        "label": "COLLECTIONS & PRIVACY",
+        "detail": "Organize and save favorite recipes into collections. Privacy controls to keep recipes private or share publicly."
+      }
+    },
+    "techTitle": "TECH STACK",
+    "architectureTitle": "ARCHITECTURE HIGHLIGHTS",
+    "architecture": [
+      "Type-safe API with validated form requests and typed TypeScript frontend",
+      "Many-to-many relationships for flexible recipe-ingredient associations with pivot data",
+      "JSON columns for storing complex nutritional data",
+      "Enum-based categorization for ingredient types (Vegetable, Fruit, Protein, Dairy, Grain, Spice)"
+    ],
+    "learnedTitle": "WHAT I LEARNED",
+    "learned": [
+      "Building RESTful APIs with Laravel and consuming them in React Native",
+      "Implementing secure authentication flows for mobile apps",
+      "Managing complex database relationships (many-to-many with pivot data)",
+      "Setting up CI/CD pipelines with GitHub Actions for both backend and mobile"
+    ],
+    "backShort": "Back"
   }
 }
