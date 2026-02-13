@@ -147,12 +147,12 @@
   },
   "mangeBien": {
     "back": "Retour au portfolio",
-    "period": "2024 — 2025",
+    "period": "2026",
     "description": "Une application mobile de gestion de recettes et de découverte sociale construite avec Laravel et React Native.",
     "role": "DÉVELOPPEUR FULLSTACK",
     "type": "Projet Personnel",
     "aboutTitle": "À PROPOS DU PROJET",
-    "aboutP1": "Mange Bien est une application mobile multiplateforme qui permet aux utilisateurs de découvrir, créer et partager des recettes. Elle combine des fonctionnalités sociales comme suivre des chefs et aimer des recettes avec des outils pratiques pour gérer sa propre collection de recettes.",
+    "aboutP1": "Mange Bien est une application mobile multiplateforme qui permet aux utilisateurs de découvrir, créer et partager des recettes. Elle combine des fonctionnalités sociales comme suivre des chefs et aimer des recettes.",
     "aboutP2": "L'application propose l'authentification utilisateur, la création de recettes avec photos, le suivi nutritionnel, la découverte sociale de chefs en vedette et de recettes tendances, des collections pour organiser ses favoris, et des contrôles de confidentialité pour garder ses recettes privées ou les partager publiquement.",
     "featuresTitle": "FONCTIONNALITÉS CLÉS",
     "features": {
@@ -187,6 +187,95 @@
       "Implémenter des flux d'authentification sécurisés pour applications mobiles",
       "Gérer des relations de base de données complexes (many-to-many avec données pivot)",
       "Mettre en place des pipelines CI/CD avec GitHub Actions pour le backend et le mobile"
+    ],
+    "backShort": "Retour"
+  },
+  "conveyor": {
+    "back": "Retour au portfolio",
+    "period": "2025",
+    "description": "Un système de convoyeur automatisé piloté par IoT qui scanne les colis par RFID et les achemine vers le bon entrepôt.",
+    "role": "DÉVELOPPEUR FULLSTACK & IOT",
+    "type": "Projet Scolaire - Epitech",
+    "aboutTitle": "À PROPOS DU PROJET",
+    "aboutP1": "Le système de gestion de convoyeur RFID est une solution IoT de bout en bout qui automatise le tri de colis en environnement logistique. Un microcontrôleur ESP8266 lit les tags RFID sur les colis, détermine l'entrepôt de destination et actionne une porte motorisée par servo pour acheminer chaque colis vers la bonne voie.",
+    "aboutP2": "Le système s'intègre avec l'ERP Dolibarr pour la gestion des stocks et expose un tableau de bord Next.js en temps réel pour le suivi du flux de colis, de la capacité des entrepôts et de l'état du système. Réalisé en équipe à Epitech, il met en œuvre des systèmes embarqués et le développement web full-stack.",
+    "featuresTitle": "FONCTIONNALITÉS CLÉS",
+    "features": {
+      "0": {
+        "label": "SCAN RFID DES COLIS",
+        "detail": "Lecteur MFRC522 scanne les tags, extrait la référence produit et identifie l'entrepôt cible à partir des données du tag."
+      },
+      "1": {
+        "label": "ROUTAGE AUTOMATISÉ 3 VOIES",
+        "detail": "Porte motorisée par servo positionnée à 0°, 90° ou 180° pour acheminer les colis vers l'Entrepôt A, B ou C. Capteur laser à coupure de faisceau pour détecter l'arrivée des colis."
+      },
+      "2": {
+        "label": "INTÉGRATION ERP",
+        "detail": "L'ESP8266 communique avec l'ERP Dolibarr via API REST pour créer des produits et enregistrer les mouvements de stock automatiquement à chaque scan."
+      },
+      "3": {
+        "label": "TABLEAU DE BORD TEMPS RÉEL",
+        "detail": "Tableau de bord Next.js interrogeant Dolibarr toutes les 5 secondes pour afficher les statistiques en direct, la répartition des entrepôts, les colis scannés et l'état du système."
+      }
+    },
+    "techTitle": "STACK TECHNIQUE",
+    "architectureTitle": "POINTS D'ARCHITECTURE",
+    "architecture": [
+      "Architecture trois tiers : contrôleur embarqué, backend ERP et tableau de bord web communiquant via APIs REST",
+      "Backend Dockerisé avec Dolibarr ERP, MariaDB et PHPMyAdmin pour un déploiement facile et reproductible",
+      "Communication RFID avec ArduinoJson pour des payloads API structurés depuis le microcontrôleur",
+      "Visualisation de données en temps réel avec Recharts et Radix UI pour une interface de monitoring accessible et responsive"
+    ],
+    "learnedTitle": "CE QUE J'AI APPRIS",
+    "learned": [
+      "Développer du firmware embarqué en C++ avec PlatformIO et interfacer des périphériques matériels (RFID, servo, capteurs laser)",
+      "Concevoir des intégrations API REST entre microcontrôleurs et logiciels d'entreprise (ERP Dolibarr)",
+      "Orchestrer des environnements multi-services avec Docker Compose pour le backend, la base de données et les outils d'administration",
+      "Construire des tableaux de bord de monitoring temps réel avec des stratégies de polling et des bibliothèques de visualisation de données"
+    ],
+    "backShort": "Retour"
+  },
+  "alertify": {
+    "back": "Retour au portfolio",
+    "period": "DECEMBRE 2024 — SEPTEMBRE 2026 (EN COURS)",
+    "description": "Une plateforme intelligente de gestion des catastrophes conçue pour les sismologues, météorologues et agences de protection civile.",
+    "role": "PRODUCT OWNER & DÉVELOPPEUR PRINCIPAL",
+    "type": "Projet de Fin d'Études - Epitech",
+    "aboutTitle": "À PROPOS DU PROJET",
+    "aboutP1": "Alertify est une plateforme de gestion des catastrophes de niveau professionnel conçue pour la surveillance d'infrastructures critiques. Développée en tant que projet de fin d'études à Epitech avec une équipe cross-fonctionnelle de 6 personnes, elle démontre des capacités full-stack, l'intégration IoT et des systèmes temps réel à grande échelle.",
+    "aboutP2": "La plateforme combine le traitement de données de capteurs en temps réel, l'analyse prédictive par IA et une interface d'administration intuitive pour aider les agences à prédire, surveiller et répondre aux catastrophes naturelles. J'ai dirigé la conception du produit et le développement frontend et participé à l'architecture backend et au développement IoT.",
+    "featuresTitle": "FONCTIONNALITÉS CLÉS",
+    "features": {
+      "0": {
+        "label": "TABLEAU DE BORD ANALYTIQUE TEMPS RÉEL",
+        "detail": "Visualisation en direct des données des capteurs avec graphiques et métriques interactifs. Mises à jour temps réel via Socket.io pour une surveillance instantanée des conditions environnementales."
+      },
+      "1": {
+        "label": "SYSTÈME D'ALERTE INTELLIGENT",
+        "detail": "Notifications hiérarchiques (faible/modéré/critique) basées sur l'analyse temps réel des capteurs. Notifications push pour les plateformes mobiles et web admin."
+      },
+      "2": {
+        "label": "MOTEUR IA PRÉDICTIF",
+        "detail": "Prédiction de catastrophes basée sur ML. Détection d'anomalies en temps réel et scoring de risque par analyse des patterns de capteurs."
+      },
+      "3": {
+        "label": "GESTION DES CAPTEURS",
+        "detail": "Configuration et surveillance des appareils IoT (web uniquement). Suivi de l'état des capteurs, configuration des seuils et gestion des déploiements d'appareils."
+      }
+    },
+    "techTitle": "STACK TECHNIQUE",
+    "impactTitle": "IMPACT PROFESSIONNEL",
+    "impact": [
+      "Conçu pour les sismologues, météorologues et agences de protection civile pour surveiller les infrastructures critiques",
+      "Architecture microservices capable de gérer des flux de données IoT temps réel provenant de réseaux de capteurs distribués",
+      "Conforme au RGPD avec approche sécurité d'abord : authentification JWT et contrôle d'accès basé sur les rôles"
+    ],
+    "methodologyTitle": "MÉTHODOLOGIE DE DÉVELOPPEMENT",
+    "methodology": [
+      "Méthodologie Cycle en V avec validation systématique à chaque étape de développement",
+      "Exigence de 85% de couverture de tests unitaires avec tests d'intégration complets",
+      "CI/CD via GitHub Actions pour tests et déploiement automatisés",
+      "Sprints Agile avec ClickUp pour le suivi de projet et la coordination d'équipe"
     ],
     "backShort": "Retour"
   }

@@ -5,17 +5,22 @@ import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const stack = [
-  "Laravel",
-  "PHP",
-  "React Native",
-  "Expo",
+  "ESP8266",
+  "C++",
+  "PlatformIO",
+  "MFRC522 (RFID)",
+  "Next.js",
+  "React",
   "TypeScript",
-  "PostgreSQL",
   "Tailwind CSS",
+  "Recharts",
+  "Dolibarr ERP",
+  "MariaDB",
+  "Docker",
 ];
 
-export default function MangeBienPage() {
-  const t = useTranslations("mangeBien");
+export default function ConveyorPage() {
+  const t = useTranslations("conveyor");
 
   return (
     <main className="min-h-screen bg-[#FAF9F6]">
@@ -37,16 +42,16 @@ export default function MangeBienPage() {
               {t("period")}
             </p>
             <h1 className="text-5xl md:text-7xl font-bold text-[#1a1a1a] leading-[0.9] mb-4">
-              Mange
+              RFID
               <br />
-              Bien
+              Conveyor
             </h1>
             <p className="text-lg text-[#666] max-w-md leading-relaxed">
               {t("description")}
             </p>
           </div>
           <div className="md:col-span-5 flex flex-col items-start md:items-end gap-3">
-            <span className="text-4xl">🍳</span>
+            <span className="text-4xl">📦</span>
             <div className="border border-[#e5e5e5] rounded-full px-4 py-2">
               <span className="text-xs tracking-widest text-[#1a1a1a] font-medium">
                 {t("role")}
@@ -63,7 +68,7 @@ export default function MangeBienPage() {
             className="absolute -top-5 right-0 text-[80px] font-bold text-[#FAF9F6] select-none hidden md:block"
             style={{ WebkitTextStroke: "1px #e5e5e5" }}
           >
-            2026
+            2025
           </span>
         </div>
       </div>

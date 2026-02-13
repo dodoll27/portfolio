@@ -5,17 +5,19 @@ import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const stack = [
-  "Laravel",
-  "PHP",
   "React Native",
   "Expo",
+  "Next.js",
   "TypeScript",
   "PostgreSQL",
+  "Prisma ORM",
+  "Socket.io",
+  "Docker",
   "Tailwind CSS",
 ];
 
-export default function MangeBienPage() {
-  const t = useTranslations("mangeBien");
+export default function AlertifyPage() {
+  const t = useTranslations("alertify");
 
   return (
     <main className="min-h-screen bg-[#FAF9F6]">
@@ -37,16 +39,14 @@ export default function MangeBienPage() {
               {t("period")}
             </p>
             <h1 className="text-5xl md:text-7xl font-bold text-[#1a1a1a] leading-[0.9] mb-4">
-              Mange
-              <br />
-              Bien
+              Alertify
             </h1>
             <p className="text-lg text-[#666] max-w-md leading-relaxed">
               {t("description")}
             </p>
           </div>
           <div className="md:col-span-5 flex flex-col items-start md:items-end gap-3">
-            <span className="text-4xl">🍳</span>
+            <span className="text-4xl">🚨</span>
             <div className="border border-[#e5e5e5] rounded-full px-4 py-2">
               <span className="text-xs tracking-widest text-[#1a1a1a] font-medium">
                 {t("role")}
@@ -137,16 +137,16 @@ export default function MangeBienPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 py-16 border-t border-[#e5e5e5]">
           <div className="md:col-span-4">
             <h2 className="text-xs tracking-widest text-[#999] mb-4">
-              {t("architectureTitle")}
+              {t("impactTitle")}
             </h2>
           </div>
           <div className="md:col-span-8">
             <ul className="space-y-4">
-              {[0, 1, 2, 3].map((idx) => (
+              {[0, 1, 2].map((idx) => (
                 <li key={idx} className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] mt-2 shrink-0" />
                   <span className="text-sm text-[#1a1a1a] leading-relaxed">
-                    {t(`architecture.${idx}`)}
+                    {t(`impact.${idx}`)}
                   </span>
                 </li>
               ))}
@@ -159,7 +159,7 @@ export default function MangeBienPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 py-16 border-t border-[#e5e5e5]">
           <div className="md:col-span-4">
             <h2 className="text-xs tracking-widest text-[#999] mb-4">
-              {t("learnedTitle")}
+              {t("methodologyTitle")}
             </h2>
           </div>
           <div className="md:col-span-8">
@@ -168,7 +168,7 @@ export default function MangeBienPage() {
                 <li key={idx} className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] mt-2 shrink-0" />
                   <span className="text-sm text-[#1a1a1a] leading-relaxed">
-                    {t(`learned.${idx}`)}
+                    {t(`methodology.${idx}`)}
                   </span>
                 </li>
               ))}
