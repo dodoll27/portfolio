@@ -41,7 +41,7 @@ async function getActivities() {
   const athlete = await stravaFetch('/athlete');
   const stats = await stravaFetch(`/athletes/${athlete.id}/stats`);
   const distance = stats.ytd_run_totals?.distance;
-  const ytdDistance = distance !== undefined ? distance / 1000 : 0;
+  const ytdDistance = distance !== undefined ? Math.floor(distance / 100) / 10 : 0;
   return { activities: stats, ytdDistance };
 }
 
