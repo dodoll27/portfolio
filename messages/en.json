@@ -144,5 +144,139 @@
       "Kept remote and on-site teams aligned on product direction"
     ],
     "backShort": "Back"
+  },
+  "mangeBien": {
+    "back": "Back to portfolio",
+    "period": "2026",
+    "description": "A recipe management and social discovery mobile app built with Laravel and React Native.",
+    "role": "FULLSTACK DEVELOPER",
+    "type": "Personal Project",
+    "aboutTitle": "ABOUT THE PROJECT",
+    "aboutP1": "Mange Bien is a cross-platform mobile application that lets users discover, create, and share recipes. It combines social features like following chefs and liking recipes.",
+    "aboutP2": "The app features user authentication, recipe creation with photos, nutritional tracking, social discovery of featured chefs, collections to organize favorites, and privacy controls to keep recipes private or share them publicly.",
+    "featuresTitle": "KEY FEATURES",
+    "features": {
+      "0": {
+        "label": "USER AUTHENTICATION",
+        "detail": "Secure signup/login with token-based authentication using Laravel Sanctum and Expo Secure Store for credential storage."
+      },
+      "1": {
+        "label": "RECIPE MANAGEMENT",
+        "detail": "Create recipes with ingredients, instructions, and photos. Cloudinary integration for image uploads and storage."
+      },
+      "2": {
+        "label": "SOCIAL DISCOVERY",
+        "detail": "Browse featured chefs. Follow other users and like recipes to build your feed."
+      },
+      "3": {
+        "label": "COLLECTIONS & PRIVACY",
+        "detail": "Organize and save favorite recipes into collections. Privacy controls to keep recipes private or share publicly."
+      }
+    },
+    "techTitle": "TECH STACK",
+    "architectureTitle": "ARCHITECTURE HIGHLIGHTS",
+    "architecture": [
+      "Type-safe API with validated form requests and typed TypeScript frontend",
+      "Many-to-many relationships for flexible recipe-ingredient associations with pivot data",
+      "JSON columns for storing complex nutritional data",
+      "Enum-based categorization for ingredient types (Vegetable, Fruit, Protein, Dairy, Grain, Spice)"
+    ],
+    "learnedTitle": "WHAT I LEARNED",
+    "learned": [
+      "Building RESTful APIs with Laravel and consuming them in React Native",
+      "Implementing secure authentication flows for mobile apps",
+      "Managing complex database relationships (many-to-many with pivot data)",
+      "Setting up CI/CD pipelines with GitHub Actions for both backend and mobile"
+    ],
+    "backShort": "Back"
+  },
+  "conveyor": {
+    "back": "Back to portfolio",
+    "period": "2025",
+    "description": "An IoT-powered automated conveyor belt system that scans packages via RFID and routes them to the correct warehouse.",
+    "role": "FULLSTACK & IOT DEVELOPER",
+    "type": "School Project - Epitech",
+    "aboutTitle": "ABOUT THE PROJECT",
+    "aboutP1": "The RFID Conveyor Belt Management System is an end-to-end IoT solution that automates package sorting in a warehouse environment. An ESP8266 microcontroller reads RFID tags on packages, determines the destination warehouse, and actuates a servo-driven gate to route each package to the correct lane.",
+    "aboutP2": "The system integrates with Dolibarr ERP for inventory management and exposes a real-time Next.js dashboard for monitoring package flow, warehouse capacity, and system health. Built as a team project at Epitech, it demonstrates embedded systems and full-stack web development working together.",
+    "featuresTitle": "KEY FEATURES",
+    "features": {
+      "0": {
+        "label": "RFID PACKAGE SCANNING",
+        "detail": "MFRC522 reader scans tags, extracts the product reference, and identifies the target warehouse based on the tag data."
+      },
+      "1": {
+        "label": "3-WAY AUTOMATED ROUTING",
+        "detail": "Servo-driven gate positions at 0°, 90°, or 180° to route packages to Warehouse A, B, or C. Laser break-beam sensor detects package arrival."
+      },
+      "2": {
+        "label": "ERP INTEGRATION",
+        "detail": "ESP8266 communicates with Dolibarr ERP via REST API to create products and record stock movements automatically on each scan."
+      },
+      "3": {
+        "label": "REAL-TIME DASHBOARD",
+        "detail": "Next.js dashboard polls Dolibarr every 5 seconds to display live stats, warehouse distribution charts, scanned packages, and system health."
+      }
+    },
+    "techTitle": "TECH STACK",
+    "architectureTitle": "ARCHITECTURE HIGHLIGHTS",
+    "architecture": [
+      "Three-tier architecture: embedded controller, ERP backend, and web dashboard communicating via REST APIs",
+      "Dockerized backend with Dolibarr ERP, MariaDB, and PHPMyAdmin for easy deployment and reproducibility",
+      "RFID communication with ArduinoJson for structured API payloads from the microcontroller",
+      "Real-time data visualization with Recharts and Radix UI for an accessible, responsive monitoring interface"
+    ],
+    "learnedTitle": "WHAT I LEARNED",
+    "learned": [
+      "Building embedded firmware in C++ with PlatformIO and interfacing hardware peripherals (RFID, servo, laser sensors)",
+      "Designing REST API integrations between microcontrollers and enterprise software (Dolibarr ERP)",
+      "Orchestrating multi-service environments with Docker Compose for backend, database, and admin tools",
+      "Building real-time monitoring dashboards with polling strategies and data visualization libraries"
+    ],
+    "backShort": "Back"
+  },
+  "alertify": {
+    "back": "Back to portfolio",
+    "period": "DECEMBER 2024 — SEPTEMBER 2026 (ONGOING)",
+    "description": "An intelligent disaster management platform built for seismologists, meteorologists, and civil protection agencies.",
+    "role": "PRODUCT OWNER & LEAD DEVELOPER",
+    "type": "Final Year Project - Epitech",
+    "aboutTitle": "ABOUT THE PROJECT",
+    "aboutP1": "Alertify is a professional-grade disaster management platform designed for critical infrastructure monitoring. Built as my final year project at Epitech with a 6-person cross-functional team, it demonstrates full-stack capabilities, IoT integration, and real-time systems at scale.",
+    "aboutP2": "The platform combines real-time sensor data processing, predictive AI analytics, and an intuitive admin interface to help agencies predict, monitor, and respond to natural disasters. I led product design and frontend development and participated in backend architecture and iot development.",
+    "featuresTitle": "KEY FEATURES",
+    "features": {
+      "0": {
+        "label": "REAL-TIME ANALYTICS DASHBOARD",
+        "detail": "Live sensor data visualization with interactive charts and metrics. Real-time updates via Socket.io for instant monitoring of environmental conditions."
+      },
+      "1": {
+        "label": "INTELLIGENT ALERT SYSTEM",
+        "detail": "Hierarchical notifications (low/moderate/critical) based on real-time sensor analysis. Push notifications for mobile and web admin platforms."
+      },
+      "2": {
+        "label": "PREDICTIVE AI ENGINE",
+        "detail": "ML-based disaster prediction. Real-time anomaly detection and risk scoring from sensor pattern analysis."
+      },
+      "3": {
+        "label": "SENSOR MANAGEMENT",
+        "detail": "Web-only configuration and monitoring of IoT devices. Track sensor health, configure thresholds, and manage device deployments."
+      }
+    },
+    "techTitle": "TECH STACK",
+    "impactTitle": "PROFESSIONAL IMPACT",
+    "impact": [
+      "Designed for seismologists, meteorologists, and civil protection agencies to monitor critical infrastructure",
+      "Microservices architecture capable of handling real-time IoT data streams from distributed sensor networks",
+      "GDPR-compliant with security-first approach: JWT authentication, and role-based access control"
+    ],
+    "methodologyTitle": "DEVELOPMENT METHODOLOGY",
+    "methodology": [
+      "Cycle en V methodology with systematic validation at each development stage",
+      "85% unit test coverage requirement with comprehensive integration testing",
+      "CI/CD via GitHub Actions for automated testing and deployment",
+      "Agile sprints with ClickUp for project tracking and team coordination"
+    ],
+    "backShort": "Back"
   }
 }

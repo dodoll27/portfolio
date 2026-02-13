@@ -64,7 +64,9 @@ export function DashboardWidgets() {
           </div>
 
           <div className="mb-4">
-            <p className="text-xs text-[#999] mb-1">{t("strava.trainingState")}</p>
+            <p className="text-xs text-[#999] mb-1">
+              {t("strava.trainingState")}
+            </p>
             <div className="flex items-center gap-2">
               <div className="h-2 bg-[#fc4c02] rounded-full w-20" />
               <div className="h-2 bg-[#fac8b3] rounded-full w-8" />
@@ -75,7 +77,9 @@ export function DashboardWidgets() {
             <span className="text-5xl font-bold text-[#fc4c02]">
               {ytdDistance}
             </span>
-            <span className="text-lg text-[#fc4c02] mb-2">{t("strava.km")}</span>
+            <span className="text-lg text-[#fc4c02] mb-2">
+              {t("strava.km")}
+            </span>
           </div>
 
           <div className="flex items-center justify-between mt-4 text-xs text-[#999]">
@@ -103,7 +107,9 @@ export function DashboardWidgets() {
           {githubData && (
             <>
               <div className="mb-4">
-                <p className="text-xs text-[#999] mb-1">{t("github.thisYear")}</p>
+                <p className="text-xs text-[#999] mb-1">
+                  {t("github.thisYear")}
+                </p>
                 <div className="flex items-end gap-2">
                   <span className="text-4xl font-bold text-[#7C3AED]">
                     {githubData.totalContributions}
@@ -121,7 +127,7 @@ export function DashboardWidgets() {
                       <div
                         key={dayIndex}
                         className={`w-[8px] h-[8px] sm:w-[10px] sm:h-[10px] rounded-sm ${getContributionColor(
-                          day.contributionCount
+                          day.contributionCount,
                         )}`}
                         title={`${day.date}: ${day.contributionCount} contributions`}
                       />

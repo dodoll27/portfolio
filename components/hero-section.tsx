@@ -3,6 +3,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function HeroSection() {
   const t = useTranslations("hero");
@@ -28,15 +29,27 @@ export function HeroSection() {
           <p className="text-[#666] max-w-xl mb-8 leading-relaxed">
             {t("description")}
           </p>
-          <Button
-            variant="outline"
-            className="rounded-full px-6 py-2 border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white group bg-transparent"
-            onClick={() => window.open("https://github.com/dodoll27", "_blank")}
-          >
-            {t("github")}
-            <ArrowUpRight className="ml-2 w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </Button>
+          <div className="flex space-x-2 items-center">
+            <Image
+              src="/profile-no-back.png"
+              alt="Hero Image"
+              width={56}
+              height={56}
+              className=" rounded-lg object-cover"
+            />
+            <Button
+              variant="outline"
+              className="rounded-full px-6 py-2 border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white group bg-transparent"
+              onClick={() =>
+                window.open("https://github.com/dodoll27", "_blank")
+              }
+            >
+              {t("github")}
+              <ArrowUpRight className="ml-2 w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </Button>
+          </div>
         </div>
+        <div className="justify-self-end"></div>
       </div>
     </section>
   );
