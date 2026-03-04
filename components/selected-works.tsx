@@ -37,7 +37,6 @@ export function SelectedWorks() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a1a]">
               Selected Works
             </h2>
-            <span className="text-xs text-[#999] ml-2">06</span>
           </div>
           <p className="text-xs tracking-widest text-[#999]">
             SCROLL TO EXPLORE
