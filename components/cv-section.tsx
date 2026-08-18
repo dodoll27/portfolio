@@ -9,6 +9,10 @@ export function CVSection() {
 
   const experiences = [
     {
+      key: "apiwork",
+      href: "/experience/apiwork",
+    },
+    {
       key: "nativeSpaces",
       href: "/experience/native-spaces",
     },
