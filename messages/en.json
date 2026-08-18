@@ -30,7 +30,7 @@
         ]
       },
       "nativeSpaces": {
-        "year": "2026",
+        "year": "2024",
         "label": "JUNIOR SOFTWARE DEVELOPER",
         "company": "Native Spaces",
         "description": "Built core features for the V2 marketplace platform connecting event organizers with venue owners. Sole on-site developer bridging remote engineers with the product and design teams.",
@@ -120,7 +120,7 @@
   },
   "apiwork": {
     "back": "Back to portfolio",
-    "period": "2026 — PRESENT",
+    "period": "MARCH 2026 — OCTOBER 2026",
     "description": "Building Automator, a rule-based business-process automation tool for the apimo real-estate CRM — the first slice of a strangler-fig migration from a legacy PHP platform to a modern React app.",
     "role": "FULLSTACK DEVELOPER",
     "type": "Work-Study",
@@ -158,7 +158,7 @@
   },
   "nativeSpaces": {
     "back": "Back to portfolio",
-    "period": "2024 — PRESENT",
+    "period": "FEBRUARY 2024 — MARCH 2026",
     "description": "Native Spaces is an online marketplace enabling event organisers to discover and book unique venues alongside handpicked event suppliers.",
     "role": "JUNIOR SOFTWARE ENGINEER",
     "type": "Apprenticeship",

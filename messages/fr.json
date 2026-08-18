@@ -30,7 +30,7 @@
         ]
       },
       "nativeSpaces": {
-        "year": "2026",
+        "year": "2024",
         "label": "DÉVELOPPEUSE LOGICIEL JUNIOR",
         "company": "Native Spaces",
         "description": "Développement de fonctionnalités clés pour la V2 de la plateforme marketplace reliant organisateurs d’événements et propriétaires de lieux. Développeuse unique sur site, en lien entre les équipes remote et les pôles produit et design.",
@@ -120,7 +120,7 @@
   },
   "apiwork": {
     "back": "Retour au portfolio",
-    "period": "2026 — AUJOURD'HUI",
+    "period": "MARS 2026 — OCTOBRE 2026",
     "description": "Développement d'Automator, un outil d'automatisation de processus métier basé sur des règles pour le CRM immobilier apimo — premier volet d'une migration en strangler-fig depuis une plateforme PHP historique vers une application React moderne.",
     "role": "DÉVELOPPEUSE FULLSTACK",
     "type": "Alternance",
@@ -158,7 +158,7 @@
   },
   "nativeSpaces": {
     "back": "Retour au portfolio",
-    "period": "2024 — AUJOURD'HUI",
+    "period": "FÉVRIER 2024 — MARS 2026",
     "description": "Native Spaces est une marketplace en ligne permettant aux organisateurs d'événements de découvrir et réserver des lieux uniques ainsi que des prestataires événementiels triés sur le volet.",
     "role": "DÉVELOPPEUSE LOGICIEL JUNIOR",
     "type": "Alternance",
