@@ -1,0 +1,346 @@
+{
+  "header": {
+    "experience": "EXPERIENCIA",
+    "uni": "UNI",
+    "skills": "HABILIDADES",
+    "pulse": "PULSO",
+    "sayHello": "Escríbeme"
+  },
+  "hero": {
+    "tagline": "INGENIERA DE SOFTWARE, EDICIÓN GEN-Z",
+    "title1": "Creando Ecosistemas",
+    "title2": "Digitales.",
+    "description": "Soy ingeniera de software y me encanta transformar ideas caóticas en productos bien estructurados. Disfruto trabajar en toda la pila, pero me apasiona sobre todo diseñar sistemas simples en apariencia y sólidos por dentro. Me importa mucho la experiencia del desarrollador, el rendimiento y escribir código que mi yo futuro no odiará.",
+    "github": "GitHub"
+  },
+  "cv": {
+    "title1": "MI",
+    "title2": "HISTORIAL DE VERSIONES",
+    "subtitle": "EXPERIENCIA 2024 - 2026",
+    "experiences": {
+      "apiwork": {
+        "year": "2026",
+        "label": "DESARROLLADORA FULLSTACK (FORMACIÓN DUAL)",
+        "company": "APIWORK",
+        "description": "Diseñé y construí Automator, una herramienta de automatización de procesos de negocio basada en reglas sobre el CRM inmobiliario apimo — el primer tramo de una migración strangler-fig desde una plataforma PHP heredada hacia una aplicación React moderna.",
+        "list": [
+          "Lideré la reescritura de un frontend heredado en CRA a una aplicación Vite + React + TypeScript + Tailwind v4, embebida vía iframe en la plataforma existente como arquitectura transitoria",
+          "Diseñé la arquitectura del frontend en torno a un store de Zustand para el asistente por pasos, componentes reutilizables y layouts anidados de React Router",
+          "Implementé lógica de backend para cubrir carencias de la API de apimo y su base de datos, entregando funcionalidades de principio a fin"
+        ]
+      },
+      "nativeSpaces": {
+        "year": "2024",
+        "label": "DESARROLLADORA DE SOFTWARE JUNIOR",
+        "company": "Native Spaces",
+        "description": "Construí funcionalidades clave para la plataforma marketplace V2 que conecta organizadores de eventos con propietarios de espacios. Única desarrolladora en sitio, haciendo de puente entre el equipo remoto y los equipos de producto y diseño.",
+        "list": [
+          "Entregué páginas de espacios, sistema de blog e implementación responsive completa",
+          "Trabajé en la migración de V1 a V2 mientras construía nuevas funcionalidades",
+          "Mantuve alineados a los equipos remoto y en sitio sobre la dirección del producto"
+        ]
+      }
+    }
+  },
+  "work": {
+    "title": "Proyectos Seleccionados",
+    "scroll": "DESLIZA PARA EXPLORAR",
+    "items": {
+      "alertify": {
+        "category": "2024-2026 / PLATAFORMA DE GESTIÓN DE CATÁSTROFES"
+      },
+      "conveyor": {
+        "category": "2025 / IOT & FULLSTACK"
+      },
+      "mangeBien": {
+        "category": "2026 / APP MÓVIL DE RECETAS COMPARTIDAS"
+      }
+    }
+  },
+  "education": {
+    "title1": "LA",
+    "title2": "HISTORIA",
+    "subtitle": "EDUCACIÓN 2020 - 2026",
+    "entries": {
+      "epitech": {
+        "period": "2023 - 2026",
+        "year": "2023",
+        "title": "Arquitecta de Software, Desarrollo de Aplicaciones RNCP",
+        "level": "RNCP Nivel 7",
+        "institution": "Epitech",
+        "details": [
+          "Desarrollo web en HTML/CSS/JS, React, NextJs",
+          "Desarrollo web, móvil y de software",
+          "Desarrollo e implementación de sistemas IoT",
+          "Metodología de proyectos"
+        ]
+      },
+      "university": {
+        "period": "2020 - 2023",
+        "year": "2020",
+        "title": "Licenciatura en Lenguas Extranjeras Aplicadas",
+        "level": "RNCP Nivel 6",
+        "institution": "Universidad de Niza Costa Azul",
+        "details": [
+          "Competencias de traducción y lingüística en inglés y español",
+          "Competencias en economía, gestión y comunicación"
+        ]
+      }
+    }
+  },
+  "stack": {
+    "title": "Stack Principal",
+    "description": "Herramientas y tecnologías que uso para crear soluciones digitales escalables.",
+    "categories": {
+      "tools": "HERRAMIENTAS",
+      "languages": "LENGUAJES",
+      "frameworks": "FRAMEWORKS"
+    },
+    "claudeNote": "sinceramente todo este portfolio se vibe-codeó"
+  },
+  "widgets": {
+    "strava": {
+      "title": "PRUEBA DE QUE SALGO A CORRER",
+      "trainingState": "ESTADO DE ENTRENAMIENTO",
+      "km": "KM",
+      "nextRace": "PRÓXIMA CARRERA",
+      "raceDetails": "10KM 19 ABR"
+    },
+    "github": {
+      "title": "PRUEBA DE QUE ESCRIBO CÓDIGO",
+      "repos": "REPOS",
+      "thisYear": "ESTE AÑO",
+      "contributions": "CONTRIBUCIONES",
+      "less": "Menos",
+      "more": "Más"
+    }
+  },
+  "cta": {
+    "title1": "Construyamos lo",
+    "title2": "próximo grande.",
+    "sayHello": "ESCRÍBEME"
+  },
+  "contact": {
+    "title": "Conectemos",
+    "subtitle": "Elige tu forma preferida de contactarme",
+    "linkedin": "Conectemos profesionalmente",
+    "github": "Revisa mi código",
+    "instagram": "Sigue mi camino",
+    "email": "Envíame un mensaje",
+    "resume": "Descarga mi CV"
+  },
+  "footer": {
+    "available": "ACTUALMENTE DISPONIBLE PARA PROYECTOS",
+    "copyright": "2026 TEO ENGINEERING"
+  },
+  "apiwork": {
+    "back": "Volver al portfolio",
+    "period": "MARZO 2026 — OCTUBRE 2026",
+    "description": "Construyendo Automator, una herramienta de automatización de procesos de negocio basada en reglas para el CRM inmobiliario apimo — el primer tramo de una migración strangler-fig desde una plataforma PHP heredada hacia una aplicación React moderna.",
+    "role": "DESARROLLADORA FULLSTACK",
+    "type": "Formación Dual",
+    "aboutTitle": "SOBRE EL PROYECTO",
+    "aboutP1": "En APIWORK, trabajo sobre apimo, un CRM inmobiliario usado por agencias para gestionar anuncios, clientes y operaciones diarias. Automator añade una capa de automatización de procesos de negocio basada en reglas sobre esa plataforma existente.",
+    "aboutP2": "El proyecto es el primer tramo de una migración strangler-fig: en lugar de una reescritura total, la plataforma PHP heredada se está reemplazando pieza por pieza con una aplicación React moderna, empezando por Automator.",
+    "myPart": "MI PARTE",
+    "contributions": {
+      "0": {
+        "label": "AUTOMATOR",
+        "detail": "Diseñé y construí Automator, una herramienta de automatización de procesos de negocio basada en reglas sobre el CRM inmobiliario apimo — el primer tramo de una migración strangler-fig desde la plataforma PHP heredada hacia una aplicación React moderna."
+      },
+      "1": {
+        "label": "REESCRITURA DEL FRONTEND",
+        "detail": "Lideré la reescritura de un frontend heredado en CRA a una aplicación Vite + React + TypeScript + Tailwind v4, embebida vía iframe en la plataforma existente como arquitectura transitoria."
+      },
+      "2": {
+        "label": "ARQUITECTURA DEL FRONTEND",
+        "detail": "Diseñé la arquitectura del frontend en torno a un store de Zustand para el asistente por pasos, componentes reutilizables y layouts anidados de React Router."
+      },
+      "3": {
+        "label": "BACKEND Y CARENCIAS DE API",
+        "detail": "Implementé lógica de backend para cubrir carencias de la API de apimo y su base de datos, entregando funcionalidades de principio a fin."
+      }
+    },
+    "techTitle": "STACK TÉCNICO",
+    "outcomesTitle": "RESULTADOS CLAVE",
+    "outcomes": [
+      "Entregué Automator, el primer tramo strangler-fig que migra apimo fuera de su plataforma PHP heredada hacia React",
+      "Entregué en producción un frontend Vite + React + TypeScript + Tailwind v4 embebido vía iframe en la plataforma existente",
+      "Construí una arquitectura de frontend escalable en torno a un store de Zustand para el asistente, componentes reutilizables y layouts anidados de React Router",
+      "Cerré carencias en la API de apimo y su base de datos con funcionalidades entregadas de principio a fin"
+    ],
+    "backShort": "Volver"
+  },
+  "nativeSpaces": {
+    "back": "Volver al portfolio",
+    "period": "FEBRERO 2024 — MARZO 2026",
+    "description": "Native Spaces es un marketplace online que permite a organizadores de eventos descubrir y reservar espacios únicos junto a proveedores de eventos seleccionados.",
+    "role": "INGENIERA DE SOFTWARE JUNIOR",
+    "type": "Formación Dual",
+    "aboutTitle": "SOBRE LA EMPRESA",
+    "aboutP1": "es un marketplace online que facilita a empresas y particulares reservar espacios verdaderamente únicos para eventos como lanzamientos de producto, seminarios corporativos, sesiones de fotos y más. La plataforma ofrece una selección curada de espacios, desde villas de lujo y castillos históricos hasta jardines ocultos, barcos y yates, con opciones para distintos estilos y presupuestos.",
+    "aboutP2": "Native Spaces también apoya a propietarios de espacios infrautilizados ayudándoles a mostrar sus propiedades y conectar con clientes nacionales e internacionales. La empresa gestiona aspectos operativos clave, incluyendo el seguro de eventos y un sistema de pago seguro y simplificado.",
+    "myPart": "MI PARTE",
+    "contributions": {
+      "0": {
+        "label": "CONSTRUCCIÓN DE LA PLATAFORMA V2",
+        "detail": "Construí funcionalidades clave de la plataforma V2 — páginas de espacios, sistema de blog e implementación responsive completa en todo el sitio, entre otras."
+      },
+      "1": {
+        "label": "MIGRACIÓN Y NUEVAS FUNCIONALIDADES",
+        "detail": "Construí funcionalidades de la V2 en Next.js, TypeScript, Tailwind CSS, tRPC y PostgreSQL, adaptando el código según lo aprendido en la V1 y ayudando a incorporar al equipo a la nueva plataforma."
+      },
+      "2": {
+        "label": "DESARROLLO EN SITIO",
+        "detail": "Única desarrolladora en sitio del equipo de desarrollo, haciendo de puente entre ingenieros remotos y el equipo en sitio para decisiones de producto y diseño."
+      },
+      "3": {
+        "label": "INVESTIGACIÓN DE USUARIOS",
+        "detail": "Recopilé y sinteticé feedback de usuarios para orientar decisiones de producto y validar la dirección de las funcionalidades."
+      }
+    },
+    "techTitle": "TECNOLOGÍAS CON LAS QUE TRABAJO",
+    "outcomesTitle": "RESULTADOS CLAVE",
+    "outcomes": [
+      "Entregué páginas de espacios y sistema de blog, ya en producción en la plataforma",
+      "Implementación responsive completa en todo el sitio",
+      "Navegué con éxito la migración de V1 a V2 sin bloquear el desarrollo de nuevas funcionalidades",
+      "Mantuve alineados a los equipos remoto y en sitio sobre la dirección del producto"
+    ],
+    "backShort": "Volver"
+  },
+  "mangeBien": {
+    "back": "Volver al portfolio",
+    "period": "2026",
+    "description": "Una app móvil de gestión de recetas y descubrimiento social construida con Laravel y React Native.",
+    "role": "DESARROLLADORA FULLSTACK",
+    "type": "Proyecto Personal",
+    "aboutTitle": "SOBRE EL PROYECTO",
+    "aboutP1": "Mange Bien es una aplicación móvil multiplataforma que permite a los usuarios descubrir, crear y compartir recetas. Combina funcionalidades sociales como seguir a chefs y dar like a recetas.",
+    "aboutP2": "La app incluye autenticación de usuarios, creación de recetas con fotos, seguimiento nutricional, descubrimiento social de chefs destacados, colecciones para organizar favoritos y controles de privacidad para mantener recetas privadas o compartirlas públicamente.",
+    "featuresTitle": "FUNCIONALIDADES CLAVE",
+    "features": {
+      "0": {
+        "label": "AUTENTICACIÓN DE USUARIOS",
+        "detail": "Registro/inicio de sesión seguro con autenticación por token usando Laravel Sanctum y Expo Secure Store para el almacenamiento de credenciales."
+      },
+      "1": {
+        "label": "GESTIÓN DE RECETAS",
+        "detail": "Creación de recetas con ingredientes, instrucciones y fotos. Integración con Cloudinary para subida y almacenamiento de imágenes."
+      },
+      "2": {
+        "label": "DESCUBRIMIENTO SOCIAL",
+        "detail": "Explora chefs destacados. Sigue a otros usuarios y da like a recetas para construir tu feed."
+      },
+      "3": {
+        "label": "COLECCIONES Y PRIVACIDAD",
+        "detail": "Organiza y guarda tus recetas favoritas en colecciones. Controles de privacidad para mantener recetas privadas o compartirlas."
+      }
+    },
+    "techTitle": "STACK TÉCNICO",
+    "architectureTitle": "PUNTOS DESTACADOS DE ARQUITECTURA",
+    "architecture": [
+      "API type-safe con validación de formularios y frontend TypeScript tipado",
+      "Relaciones many-to-many para asociaciones flexibles receta-ingrediente con datos pivot",
+      "Columnas JSON para almacenar datos nutricionales complejos",
+      "Categorización basada en enums para tipos de ingredientes (Verdura, Fruta, Proteína, Lácteo, Cereal, Especia)"
+    ],
+    "learnedTitle": "LO QUE APRENDÍ",
+    "learned": [
+      "Construir APIs RESTful con Laravel y consumirlas en React Native",
+      "Implementar flujos de autenticación seguros para apps móviles",
+      "Gestionar relaciones de base de datos complejas (many-to-many con datos pivot)",
+      "Configurar pipelines CI/CD con GitHub Actions para backend y móvil"
+    ],
+    "backShort": "Volver"
+  },
+  "conveyor": {
+    "back": "Volver al portfolio",
+    "period": "2025",
+    "description": "Un sistema de cinta transportadora automatizada por IoT que escanea paquetes vía RFID y los enruta al almacén correcto.",
+    "role": "DESARROLLADORA FULLSTACK & IOT",
+    "type": "Proyecto Escolar - Epitech",
+    "aboutTitle": "SOBRE EL PROYECTO",
+    "aboutP1": "El Sistema de Gestión de Cinta Transportadora RFID es una solución IoT de extremo a extremo que automatiza la clasificación de paquetes en un entorno de almacén. Un microcontrolador ESP8266 lee etiquetas RFID en los paquetes, determina el almacén de destino y acciona una compuerta accionada por servomotor para enrutar cada paquete al carril correcto.",
+    "aboutP2": "El sistema se integra con el ERP Dolibarr para la gestión de inventario y expone un dashboard en Next.js en tiempo real para monitorear el flujo de paquetes, la capacidad del almacén y el estado del sistema. Construido como proyecto de equipo en Epitech, demuestra sistemas embebidos y desarrollo web full-stack trabajando juntos.",
+    "featuresTitle": "FUNCIONALIDADES CLAVE",
+    "features": {
+      "0": {
+        "label": "ESCANEO RFID DE PAQUETES",
+        "detail": "El lector MFRC522 escanea etiquetas, extrae la referencia del producto e identifica el almacén de destino a partir de los datos de la etiqueta."
+      },
+      "1": {
+        "label": "ENRUTAMIENTO AUTOMATIZADO A 3 VÍAS",
+        "detail": "Compuerta accionada por servomotor posicionada a 0°, 90° o 180° para enrutar paquetes a los Almacenes A, B o C. Sensor láser de corte de haz detecta la llegada del paquete."
+      },
+      "2": {
+        "label": "INTEGRACIÓN ERP",
+        "detail": "El ESP8266 se comunica con el ERP Dolibarr vía API REST para crear productos y registrar movimientos de stock automáticamente en cada escaneo."
+      },
+      "3": {
+        "label": "DASHBOARD EN TIEMPO REAL",
+        "detail": "El dashboard en Next.js consulta Dolibarr cada 5 segundos para mostrar estadísticas en vivo, distribución de almacenes, paquetes escaneados y estado del sistema."
+      }
+    },
+    "techTitle": "STACK TÉCNICO",
+    "architectureTitle": "PUNTOS DESTACADOS DE ARQUITECTURA",
+    "architecture": [
+      "Arquitectura de tres niveles: controlador embebido, backend ERP y dashboard web comunicándose vía APIs REST",
+      "Backend dockerizado con Dolibarr ERP, MariaDB y PHPMyAdmin para un despliegue fácil y reproducible",
+      "Comunicación RFID con ArduinoJson para payloads de API estructurados desde el microcontrolador",
+      "Visualización de datos en tiempo real con Recharts y Radix UI para una interfaz de monitoreo accesible y responsive"
+    ],
+    "learnedTitle": "LO QUE APRENDÍ",
+    "learned": [
+      "Construir firmware embebido en C++ con PlatformIO e interconectar periféricos de hardware (RFID, servo, sensores láser)",
+      "Diseñar integraciones de API REST entre microcontroladores y software empresarial (ERP Dolibarr)",
+      "Orquestar entornos multi-servicio con Docker Compose para backend, base de datos y herramientas de administración",
+      "Construir dashboards de monitoreo en tiempo real con estrategias de polling y bibliotecas de visualización de datos"
+    ],
+    "backShort": "Volver"
+  },
+  "alertify": {
+    "back": "Volver al portfolio",
+    "period": "DICIEMBRE 2024 — SEPTIEMBRE 2026 (EN CURSO)",
+    "description": "Una plataforma inteligente de gestión de catástrofes construida para sismólogos, meteorólogos y agencias de protección civil.",
+    "role": "PRODUCT OWNER & DESARROLLADORA PRINCIPAL",
+    "type": "Proyecto de Fin de Curso - Epitech",
+    "aboutTitle": "SOBRE EL PROYECTO",
+    "aboutP1": "Alertify es una plataforma de gestión de catástrofes de nivel profesional diseñada para el monitoreo de infraestructuras críticas. Construida como mi proyecto de fin de curso en Epitech con un equipo multidisciplinar de 6 personas, demuestra capacidades full-stack, integración IoT y sistemas en tiempo real a gran escala.",
+    "aboutP2": "La plataforma combina el procesamiento de datos de sensores en tiempo real, analítica predictiva con IA y una interfaz de administración intuitiva para ayudar a las agencias a predecir, monitorear y responder a catástrofes naturales. Lideré el diseño de producto y el desarrollo frontend, y participé en la arquitectura backend y el desarrollo IoT.",
+    "featuresTitle": "FUNCIONALIDADES CLAVE",
+    "features": {
+      "0": {
+        "label": "DASHBOARD ANALÍTICO EN TIEMPO REAL",
+        "detail": "Visualización en vivo de datos de sensores con gráficos y métricas interactivas. Actualizaciones en tiempo real vía Socket.io para monitoreo instantáneo de condiciones ambientales."
+      },
+      "1": {
+        "label": "SISTEMA DE ALERTAS INTELIGENTE",
+        "detail": "Notificaciones jerárquicas (bajo/moderado/crítico) basadas en el análisis de sensores en tiempo real. Notificaciones push para plataformas móviles y web de administración."
+      },
+      "2": {
+        "label": "MOTOR DE IA PREDICTIVA",
+        "detail": "Predicción de catástrofes basada en ML. Detección de anomalías en tiempo real y puntuación de riesgo a partir del análisis de patrones de sensores."
+      },
+      "3": {
+        "label": "GESTIÓN DE SENSORES",
+        "detail": "Configuración y monitoreo de dispositivos IoT (solo web). Seguimiento del estado de los sensores, configuración de umbrales y gestión de despliegues de dispositivos."
+      }
+    },
+    "techTitle": "STACK TÉCNICO",
+    "impactTitle": "IMPACTO PROFESIONAL",
+    "impact": [
+      "Diseñada para sismólogos, meteorólogos y agencias de protección civil para monitorear infraestructuras críticas",
+      "Arquitectura de microservicios capaz de gestionar flujos de datos IoT en tiempo real desde redes de sensores distribuidas",
+      "Conforme al RGPD con un enfoque de seguridad ante todo: autenticación JWT y control de acceso basado en roles"
+    ],
+    "methodologyTitle": "METODOLOGÍA DE DESARROLLO",
+    "methodology": [
+      "Metodología en cascada (cycle en V) con validación sistemática en cada etapa de desarrollo",
+      "Requisito de 85% de cobertura de tests unitarios con pruebas de integración exhaustivas",
+      "CI/CD vía GitHub Actions para tests y despliegue automatizados",
+      "Sprints ágiles con ClickUp para el seguimiento del proyecto y coordinación de equipo"
+    ],
+    "backShort": "Volver"
+  }
+}

@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 const stack = [
   "TypeScript",
@@ -75,7 +75,7 @@ export default function NativeSpacesPage() {
             className="absolute -top-5 right-0 text-[80px] font-bold text-[#FAF9F6] select-none hidden md:block"
             style={{ WebkitTextStroke: "1px #e5e5e5" }}
           >
-            2026
+            2024
           </span>
         </div>
       </div>

@@ -18,8 +18,19 @@
     "title2": "VERSION HISTORY",
     "subtitle": "EXPERIENCE 2024 - 2026",
     "experiences": {
-      "nativeSpaces": {
+      "apiwork": {
         "year": "2026",
+        "label": "FULLSTACK DEVELOPER (WORK-STUDY)",
+        "company": "APIWORK",
+        "description": "Designed and built Automator, a rule-based business-process automation tool on top of the apimo real-estate CRM — the first slice of a strangler-fig migration from a legacy PHP platform to a modern React app.",
+        "list": [
+          "Led the rewrite of a legacy CRA frontend into a Vite + React + TypeScript + Tailwind v4 app, embedded via iframe in the existing platform as a transitional architecture",
+          "Architected the frontend around a Zustand wizard store, reusable components and nested React Router layouts",
+          "Implemented backend logic to cover gaps in the apimo API and its database, delivering features end-to-end"
+        ]
+      },
+      "nativeSpaces": {
+        "year": "2024",
         "label": "JUNIOR SOFTWARE DEVELOPER",
         "company": "Native Spaces",
         "description": "Built core features for the V2 marketplace platform connecting event organizers with venue owners. Sole on-site developer bridging remote engineers with the product and design teams.",
@@ -28,6 +39,21 @@
           "Worked on V1 to V2 migration while building new features",
           "Kept remote and on-site teams aligned on product direction"
         ]
+      }
+    }
+  },
+  "work": {
+    "title": "Selected Works",
+    "scroll": "SCROLL TO EXPLORE",
+    "items": {
+      "alertify": {
+        "category": "2024-2026 / DISASTER MANAGEMENT PLATFORM"
+      },
+      "conveyor": {
+        "category": "2025 / IOT & FULLSTACK"
+      },
+      "mangeBien": {
+        "category": "2026 / RECIPE SHARING MOBILE APP"
       }
     }
   },
@@ -107,9 +133,47 @@
     "available": "CURRENTLY AVAILABLE FOR PROJECTS",
     "copyright": "2026 TEO ENGINEERING"
   },
+  "apiwork": {
+    "back": "Back to portfolio",
+    "period": "MARCH 2026 — OCTOBER 2026",
+    "description": "Building Automator, a rule-based business-process automation tool for the apimo real-estate CRM — the first slice of a strangler-fig migration from a legacy PHP platform to a modern React app.",
+    "role": "FULLSTACK DEVELOPER",
+    "type": "Work-Study",
+    "aboutTitle": "ABOUT THE PROJECT",
+    "aboutP1": "At APIWORK, I work on top of apimo, a real-estate CRM used by agencies to manage listings, clients, and daily operations. Automator layers rule-based business-process automation onto that existing platform.",
+    "aboutP2": "The project is the first slice of a strangler-fig migration: rather than a big-bang rewrite, the legacy PHP platform is being replaced piece by piece with a modern React application, starting with Automator.",
+    "myPart": "MY PART",
+    "contributions": {
+      "0": {
+        "label": "AUTOMATOR",
+        "detail": "Designed and built Automator, a rule-based business-process automation tool on top of the apimo real-estate CRM — the first slice of a strangler-fig migration from the legacy PHP platform to a modern React app."
+      },
+      "1": {
+        "label": "FRONTEND REWRITE",
+        "detail": "Led the rewrite of a legacy CRA frontend into a Vite + React + TypeScript + Tailwind v4 app, embedded via iframe in the existing platform as a transitional architecture."
+      },
+      "2": {
+        "label": "FRONTEND ARCHITECTURE",
+        "detail": "Architected the frontend around a Zustand wizard store, reusable components, and nested React Router layouts."
+      },
+      "3": {
+        "label": "BACKEND & API GAPS",
+        "detail": "Implemented backend logic to cover gaps in the apimo API and its database, delivering features end-to-end."
+      }
+    },
+    "techTitle": "TECH STACK",
+    "outcomesTitle": "KEY OUTCOMES",
+    "outcomes": [
+      "Shipped Automator, the first strangler-fig slice migrating apimo off its legacy PHP platform onto React",
+      "Delivered a production Vite + React + TypeScript + Tailwind v4 frontend embedded via iframe in the existing platform",
+      "Built a scalable frontend architecture around a Zustand wizard store, reusable components, and nested React Router layouts",
+      "Closed gaps in the apimo API and database with end-to-end backend features"
+    ],
+    "backShort": "Back"
+  },
   "nativeSpaces": {
     "back": "Back to portfolio",
-    "period": "2024 — PRESENT",
+    "period": "FEBRUARY 2024 — MARCH 2026",
     "description": "Native Spaces is an online marketplace enabling event organisers to discover and book unique venues alongside handpicked event suppliers.",
     "role": "JUNIOR SOFTWARE ENGINEER",
     "type": "Apprenticeship",

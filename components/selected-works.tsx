@@ -1,39 +1,44 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 const works = [
   {
+    key: "alertify",
     title: "Alertify",
-    category: "2024-2026 / DISASTER MANAGEMENT PLATFORM",
     image: "/alertify.webp",
     href: "/experience/alertify",
   },
   {
+    key: "conveyor",
     title: "RFID Conveyor",
-    category: "2025 / IOT & FULLSTACK",
     image: "/conveyor.webp",
     href: "/experience/conveyor",
   },
   {
+    key: "mangeBien",
     title: "Mange Bien",
-    category: "2026 / RECIPE SHARING MOBILE APP",
     image: "/mangebien.webp",
     href: "/experience/mange-bien",
   },
 ];
 
 export function SelectedWorks() {
+  const t = useTranslations("work");
+
   return (
     <section id="work" className="px-6 md:px-12">
       <div className="max-w-7xl mx-auto border-t py-16 bg-[#FAF9F6]">
         <div className="flex items-end justify-between mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a1a]">
-              Selected Works
+              {t("title")}
             </h2>
           </div>
           <p className="text-xs tracking-widest text-[#999]">
-            SCROLL TO EXPLORE
+            {t("scroll")}
           </p>
         </div>
 
@@ -54,7 +59,7 @@ export function SelectedWorks() {
             </div>
             <div className="mt-4">
               <p className="text-xs tracking-wider text-[#7C3AED] mb-1">
-                {works[0].category}
+                {t(`items.${works[0].key}.category`)}
               </p>
               <h3 className="text-lg font-bold text-[#1a1a1a]">
                 {works[0].title}
@@ -78,7 +83,7 @@ export function SelectedWorks() {
             </div>
             <div className="mt-4">
               <p className="text-xs tracking-wider text-[#7C3AED] mb-1">
-                {works[1].category}
+                {t(`items.${works[1].key}.category`)}
               </p>
               <h3 className="text-lg font-bold text-[#1a1a1a]">
                 {works[1].title}
@@ -102,7 +107,7 @@ export function SelectedWorks() {
             </div>
             <div className="mt-4">
               <p className="text-xs tracking-wider text-[#7C3AED] mb-1">
-                {works[2].category}
+                {t(`items.${works[2].key}.category`)}
               </p>
               <h3 className="text-lg font-bold text-[#1a1a1a]">
                 {works[2].title}

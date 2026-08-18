@@ -5,24 +5,24 @@ import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const stack = [
-  "Laravel",
-  "PHP",
-  "React Native",
-  "Expo",
   "TypeScript",
-  "PostgreSQL",
-  "Tailwind CSS",
+  "React",
+  "Vite",
+  "Tailwind CSS v4",
+  "Zustand",
+  "React Router",
 ];
 
-export default function MangeBienPage() {
-  const t = useTranslations("mangeBien");
+export default function ApiworkPage() {
+  const t = useTranslations("apiwork");
 
   return (
     <main className="min-h-screen bg-[#FAF9F6]">
+      {/* Navigation */}
       <nav className="px-6 md:px-12 py-6 border-b border-[#e5e5e5]">
         <div className="max-w-7xl mx-auto">
           <Link
-            href="/#work"
+            href="/#experience"
             className="inline-flex items-center gap-2 text-sm text-[#666] hover:text-[#7C3AED] transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -30,6 +30,8 @@ export default function MangeBienPage() {
           </Link>
         </div>
       </nav>
+
+      {/* Hero */}
       <section className="px-6 md:px-12 pt-16 pb-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
           <div className="md:col-span-7">
@@ -37,16 +39,14 @@ export default function MangeBienPage() {
               {t("period")}
             </p>
             <h1 className="text-5xl md:text-7xl font-bold text-[#1a1a1a] leading-[0.9] mb-4">
-              Mange
-              <br />
-              Bien
+              APIWORK
             </h1>
             <p className="text-lg text-[#666] max-w-md leading-relaxed">
               {t("description")}
             </p>
           </div>
           <div className="md:col-span-5 flex flex-col items-start md:items-end gap-3">
-            <span className="text-4xl">🍳</span>
+            <span className="text-4xl">🏠</span>
             <div className="border border-[#e5e5e5] rounded-full px-4 py-2">
               <span className="text-xs tracking-widest text-[#1a1a1a] font-medium">
                 {t("role")}
@@ -57,6 +57,7 @@ export default function MangeBienPage() {
         </div>
       </section>
 
+      {/* Divider with year */}
       <div className="px-6 md:px-12">
         <div className="max-w-7xl mx-auto border-t border-[#e5e5e5] relative">
           <span
@@ -68,6 +69,7 @@ export default function MangeBienPage() {
         </div>
       </div>
 
+      {/* About the project */}
       <section className="px-6 md:px-12 py-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
@@ -86,10 +88,11 @@ export default function MangeBienPage() {
         </div>
       </section>
 
+      {/* Contributions */}
       <section className="px-6 md:px-12 ">
         <div className="max-w-7xl mx-auto border-t py-16 border-[#e5e5e5]">
           <h2 className="text-xs tracking-widest text-[#999] mb-10">
-            {t("featuresTitle")}
+            {t("myPart")}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#e5e5e5]">
             {[0, 1, 2, 3].map((idx) => (
@@ -100,10 +103,10 @@ export default function MangeBienPage() {
                   </span>
                   <div>
                     <h3 className="text-xs tracking-widest text-[#1a1a1a] font-medium mb-2">
-                      {t(`features.${idx}.label`)}
+                      {t(`contributions.${idx}.label`)}
                     </h3>
                     <p className="text-sm text-[#666] leading-relaxed">
-                      {t(`features.${idx}.detail`)}
+                      {t(`contributions.${idx}.detail`)}
                     </p>
                   </div>
                 </div>
@@ -113,6 +116,7 @@ export default function MangeBienPage() {
         </div>
       </section>
 
+      {/* Tech stack */}
       <section className="px-6 md:px-12 ">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 border-t py-16 border-[#e5e5e5]">
           <div className="md:col-span-4">
@@ -133,11 +137,12 @@ export default function MangeBienPage() {
         </div>
       </section>
 
+      {/* Key outcomes */}
       <section className="px-6 md:px-12 ">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 py-16 border-t border-[#e5e5e5]">
           <div className="md:col-span-4">
             <h2 className="text-xs tracking-widest text-[#999] mb-4">
-              {t("architectureTitle")}
+              {t("outcomesTitle")}
             </h2>
           </div>
           <div className="md:col-span-8">
@@ -146,7 +151,7 @@ export default function MangeBienPage() {
                 <li key={idx} className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] mt-2 shrink-0" />
                   <span className="text-sm text-[#1a1a1a] leading-relaxed">
-                    {t(`architecture.${idx}`)}
+                    {t(`outcomes.${idx}`)}
                   </span>
                 </li>
               ))}
@@ -155,32 +160,11 @@ export default function MangeBienPage() {
         </div>
       </section>
 
-      <section className="px-6 md:px-12 ">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 py-16 border-t border-[#e5e5e5]">
-          <div className="md:col-span-4">
-            <h2 className="text-xs tracking-widest text-[#999] mb-4">
-              {t("learnedTitle")}
-            </h2>
-          </div>
-          <div className="md:col-span-8">
-            <ul className="space-y-4">
-              {[0, 1, 2, 3].map((idx) => (
-                <li key={idx} className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] mt-2 shrink-0" />
-                  <span className="text-sm text-[#1a1a1a] leading-relaxed">
-                    {t(`learned.${idx}`)}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
+      {/* Footer */}
       <footer className="px-6 md:px-12 py-8 border-t border-[#e5e5e5]">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Link
-            href="/#work"
+            href="/#experience"
             className="text-sm text-[#666] hover:text-[#7C3AED] transition-colors"
           >
             &larr; {t("backShort")}

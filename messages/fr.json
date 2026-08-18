@@ -18,8 +18,19 @@
     "title2": "HISTORY",
     "subtitle": "EXPÉRIENCE 2024 - 2026",
     "experiences": {
-      "nativeSpaces": {
+      "apiwork": {
         "year": "2026",
+        "label": "DÉVELOPPEUSE FULLSTACK (ALTERNANCE)",
+        "company": "APIWORK",
+        "description": "Conception et développement d'Automator, un outil d'automatisation de processus métier basé sur des règles, au-dessus du CRM immobilier apimo — premier volet d'une migration en strangler-fig depuis une plateforme PHP historique vers une application React moderne.",
+        "list": [
+          "Direction de la réécriture d'un frontend CRA historique en application Vite + React + TypeScript + Tailwind v4, intégrée en iframe dans la plateforme existante comme architecture transitoire",
+          "Architecture du frontend autour d'un store Zustand pour l'assistant multi-étapes, de composants réutilisables et de layouts React Router imbriqués",
+          "Développement de logique backend pour combler les lacunes de l'API apimo et de sa base de données, avec livraison de fonctionnalités de bout en bout"
+        ]
+      },
+      "nativeSpaces": {
+        "year": "2024",
         "label": "DÉVELOPPEUSE LOGICIEL JUNIOR",
         "company": "Native Spaces",
         "description": "Développement de fonctionnalités clés pour la V2 de la plateforme marketplace reliant organisateurs d’événements et propriétaires de lieux. Développeuse unique sur site, en lien entre les équipes remote et les pôles produit et design.",
@@ -28,6 +39,21 @@
           "Migration de la V1 vers la V2 en parallèle du développement de nouvelles fonctionnalités",
           "Lien entre équipes à distance et sur site autour de la vision produit"
         ]
+      }
+    }
+  },
+  "work": {
+    "title": "Projets Sélectionnés",
+    "scroll": "FAITES DÉFILER POUR EXPLORER",
+    "items": {
+      "alertify": {
+        "category": "2024-2026 / PLATEFORME DE GESTION DES CATASTROPHES"
+      },
+      "conveyor": {
+        "category": "2025 / IOT & FULLSTACK"
+      },
+      "mangeBien": {
+        "category": "2026 / APPLICATION MOBILE DE PARTAGE DE RECETTES"
       }
     }
   },
@@ -107,9 +133,47 @@
     "available": "ACTUELLEMENT DISPONIBLE POUR DES PROJETS",
     "copyright": "2026 TEO ENGINEERING"
   },
+  "apiwork": {
+    "back": "Retour au portfolio",
+    "period": "MARS 2026 — OCTOBRE 2026",
+    "description": "Développement d'Automator, un outil d'automatisation de processus métier basé sur des règles pour le CRM immobilier apimo — premier volet d'une migration en strangler-fig depuis une plateforme PHP historique vers une application React moderne.",
+    "role": "DÉVELOPPEUSE FULLSTACK",
+    "type": "Alternance",
+    "aboutTitle": "À PROPOS DU PROJET",
+    "aboutP1": "Chez APIWORK, je travaille au-dessus d'apimo, un CRM immobilier utilisé par des agences pour gérer leurs annonces, leurs clients et leurs opérations quotidiennes. Automator ajoute une couche d'automatisation de processus métier basée sur des règles à cette plateforme existante.",
+    "aboutP2": "Le projet constitue le premier volet d'une migration en strangler-fig : plutôt qu'une réécriture complète, la plateforme PHP historique est remplacée progressivement par une application React moderne, en commençant par Automator.",
+    "myPart": "MA CONTRIBUTION",
+    "contributions": {
+      "0": {
+        "label": "AUTOMATOR",
+        "detail": "Conception et développement d'Automator, un outil d'automatisation de processus métier basé sur des règles, au-dessus du CRM immobilier apimo — premier volet d'une migration en strangler-fig depuis la plateforme PHP historique vers une application React moderne."
+      },
+      "1": {
+        "label": "RÉÉCRITURE FRONTEND",
+        "detail": "Direction de la réécriture d'un frontend CRA historique en application Vite + React + TypeScript + Tailwind v4, intégrée en iframe dans la plateforme existante comme architecture transitoire."
+      },
+      "2": {
+        "label": "ARCHITECTURE FRONTEND",
+        "detail": "Architecture du frontend autour d'un store Zustand pour l'assistant multi-étapes, de composants réutilisables et de layouts React Router imbriqués."
+      },
+      "3": {
+        "label": "BACKEND & LACUNES API",
+        "detail": "Développement de logique backend pour combler les lacunes de l'API apimo et de sa base de données, avec livraison de fonctionnalités de bout en bout."
+      }
+    },
+    "techTitle": "STACK TECHNIQUE",
+    "outcomesTitle": "RÉSULTATS CLÉS",
+    "outcomes": [
+      "Livraison d'Automator, premier volet strangler-fig de la migration d'apimo hors de sa plateforme PHP historique vers React",
+      "Livraison d'un frontend Vite + React + TypeScript + Tailwind v4 en production, intégré en iframe dans la plateforme existante",
+      "Construction d'une architecture frontend scalable autour d'un store Zustand pour l'assistant, de composants réutilisables et de layouts React Router imbriqués",
+      "Comblement des lacunes de l'API apimo et de sa base de données avec des fonctionnalités livrées de bout en bout"
+    ],
+    "backShort": "Retour"
+  },
   "nativeSpaces": {
     "back": "Retour au portfolio",
-    "period": "2024 — AUJOURD'HUI",
+    "period": "FÉVRIER 2024 — MARS 2026",
     "description": "Native Spaces est une marketplace en ligne permettant aux organisateurs d'événements de découvrir et réserver des lieux uniques ainsi que des prestataires événementiels triés sur le volet.",
     "role": "DÉVELOPPEUSE LOGICIEL JUNIOR",
     "type": "Alternance",

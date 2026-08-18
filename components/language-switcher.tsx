@@ -7,6 +7,7 @@ import { locales, type Locale } from "@/i18n/config";
 const localeNames: Record<Locale, string> = {
   en: "EN",
   fr: "FR",
+  es: "ES",
 };
 
 export function LanguageSwitcher() {

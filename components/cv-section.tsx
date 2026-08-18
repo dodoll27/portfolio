@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { ArrowUpRight } from "lucide-react";
 
@@ -8,6 +8,10 @@ export function CVSection() {
   const t = useTranslations("cv");
 
   const experiences = [
+    {
+      key: "apiwork",
+      href: "/experience/apiwork",
+    },
     {
       key: "nativeSpaces",
       href: "/experience/native-spaces",
