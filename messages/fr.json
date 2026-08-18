@@ -42,6 +42,21 @@
       }
     }
   },
+  "work": {
+    "title": "Projets Sélectionnés",
+    "scroll": "FAITES DÉFILER POUR EXPLORER",
+    "items": {
+      "alertify": {
+        "category": "2024-2026 / PLATEFORME DE GESTION DES CATASTROPHES"
+      },
+      "conveyor": {
+        "category": "2025 / IOT & FULLSTACK"
+      },
+      "mangeBien": {
+        "category": "2026 / APPLICATION MOBILE DE PARTAGE DE RECETTES"
+      }
+    }
+  },
   "education": {
     "title1": "LE",
     "title2": "LORE",

@@ -42,6 +42,21 @@
       }
     }
   },
+  "work": {
+    "title": "Selected Works",
+    "scroll": "SCROLL TO EXPLORE",
+    "items": {
+      "alertify": {
+        "category": "2024-2026 / DISASTER MANAGEMENT PLATFORM"
+      },
+      "conveyor": {
+        "category": "2025 / IOT & FULLSTACK"
+      },
+      "mangeBien": {
+        "category": "2026 / RECIPE SHARING MOBILE APP"
+      }
+    }
+  },
   "education": {
     "title1": "THE",
     "title2": "LORE",
