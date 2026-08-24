@@ -52,6 +52,9 @@
       "conveyor": {
         "category": "2025 / IOT & FULLSTACK"
       },
+      "kubequest": {
+        "category": "2026 / KUBERNETES & CLOUD INFRASTRUCTURE"
+      },
       "mangeBien": {
         "category": "2026 / RECIPE SHARING MOBILE APP"
       }
@@ -340,6 +343,50 @@
       "85% unit test coverage requirement with comprehensive integration testing",
       "CI/CD via GitHub Actions for automated testing and deployment",
       "Agile sprints with ClickUp for project tracking and team coordination"
+    ],
+    "backShort": "Back"
+  },
+  "kubequest": {
+    "back": "Back to portfolio",
+    "period": "2026 / EPITECH PROJECT",
+    "description": "A hands-on Kubernetes deployment project provisioning and managing a cluster on AWS.",
+    "role": "CLOUD & DEVOPS ENGINEER",
+    "type": "School Project - Epitech",
+    "aboutTitle": "ABOUT THE PROJECT",
+    "aboutP1": "KubeQuest is a cloud-native infrastructure project built to provision and manage a Kubernetes cluster on AWS from the ground up, covering the full lifecycle of a cloud-native deployment: cluster provisioning, ingress and traffic routing, and templated configuration management.",
+    "aboutP2": "The project demonstrates container orchestration and cloud-native infrastructure setup, using nginx-ingress and custom ingress rules for traffic routing, the Kubernetes Dashboard for cluster visibility, and two complementary approaches to configuration management: Helm for packaged deployments and Kustomize for environment-specific overlays.",
+    "featuresTitle": "KEY FEATURES",
+    "features": {
+      "0": {
+        "label": "AWS-PROVISIONED CLUSTER",
+        "detail": "Kubernetes cluster provisioned and managed directly on AWS infrastructure."
+      },
+      "1": {
+        "label": "INGRESS & TRAFFIC ROUTING",
+        "detail": "nginx-ingress controller configured with custom ingress rules to expose and route traffic to services."
+      },
+      "2": {
+        "label": "CLUSTER VISIBILITY",
+        "detail": "Kubernetes Dashboard deployed for real-time cluster monitoring and visibility."
+      },
+      "3": {
+        "label": "DUAL CONFIG MANAGEMENT",
+        "detail": "Helm for templated, packaged deployments alongside Kustomize for environment-specific configuration overlays."
+      }
+    },
+    "techTitle": "TECH STACK",
+    "impactTitle": "WHAT IT DEMONSTRATES",
+    "impact": [
+      "Cloud-native infrastructure setup and container orchestration on AWS",
+      "Ingress-based traffic routing and service exposure with nginx-ingress",
+      "Configuration management with two complementary approaches, Helm and Kustomize, for templated and environment-specific deployments"
+    ],
+    "methodologyTitle": "TECHNICAL APPROACH",
+    "methodology": [
+      "Cluster provisioning and infrastructure setup on AWS",
+      "Ingress controller and routing rules configured for service exposure",
+      "Kubernetes Dashboard integrated for cluster observability",
+      "Parallel implementation with Helm and Kustomize to compare templated vs. overlay-based configuration management"
     ],
     "backShort": "Back"
   }

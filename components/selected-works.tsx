@@ -18,6 +18,12 @@ const works = [
     href: "/experience/conveyor",
   },
   {
+    key: "kubequest",
+    title: "KubeQuest",
+    image: "/kubequest.webp",
+    href: "/experience/kubequest",
+  },
+  {
     key: "mangeBien",
     title: "Mange Bien",
     image: "/mangebien.webp",
@@ -37,9 +43,7 @@ export function SelectedWorks() {
               {t("title")}
             </h2>
           </div>
-          <p className="text-xs tracking-widest text-[#999]">
-            {t("scroll")}
-          </p>
+          <p className="text-xs tracking-widest text-[#999]">{t("scroll")}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
@@ -91,18 +95,18 @@ export function SelectedWorks() {
             </div>
           </Link>
 
-          {/* Mange Bien - pushed right */}
+          {/* KubeQuest */}
           <Link
             href={works[2].href}
-            className="md:col-span-8 md:col-start-5 group cursor-pointer"
+            className="md:col-span-4 group cursor-pointer"
           >
             <div className="relative overflow-hidden rounded-xl bg-[#1a1a1a]">
               <Image
                 src={works[2].image}
                 alt={works[2].title}
-                width={600}
-                height={400}
-                className="w-full h-[300px] md:h-[400px] object-cover group-hover:scale-105 transition-transform duration-500"
+                width={400}
+                height={300}
+                className="w-full h-[250px] md:h-[400px] object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="mt-4">
@@ -111,6 +115,30 @@ export function SelectedWorks() {
               </p>
               <h3 className="text-lg font-bold text-[#1a1a1a]">
                 {works[2].title}
+              </h3>
+            </div>
+          </Link>
+
+          {/* Mange Bien - pushed right */}
+          <Link
+            href={works[3].href}
+            className="md:col-span-8 md:col-start-5 group cursor-pointer"
+          >
+            <div className="relative overflow-hidden rounded-xl bg-[#1a1a1a]">
+              <Image
+                src={works[3].image}
+                alt={works[3].title}
+                width={600}
+                height={400}
+                className="w-full h-[300px] md:h-[400px] object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="text-xs tracking-wider text-[#7C3AED] mb-1">
+                {t(`items.${works[3].key}.category`)}
+              </p>
+              <h3 className="text-lg font-bold text-[#1a1a1a]">
+                {works[3].title}
               </h3>
             </div>
           </Link>
