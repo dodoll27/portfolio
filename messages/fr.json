@@ -52,6 +52,9 @@
       "conveyor": {
         "category": "2025 / IOT & FULLSTACK"
       },
+      "kubequest": {
+        "category": "2026 / KUBERNETES & INFRASTRUCTURE CLOUD"
+      },
       "mangeBien": {
         "category": "2026 / APPLICATION MOBILE DE PARTAGE DE RECETTES"
       }
@@ -340,6 +343,50 @@
       "Exigence de 85% de couverture de tests unitaires avec tests d'intégration complets",
       "CI/CD via GitHub Actions pour tests et déploiement automatisés",
       "Sprints Agile avec ClickUp pour le suivi de projet et la coordination d'équipe"
+    ],
+    "backShort": "Retour"
+  },
+  "kubequest": {
+    "back": "Retour au portfolio",
+    "period": "2026 / PROJET EPITECH",
+    "description": "Un projet pratique de déploiement Kubernetes provisionnant et gérant un cluster sur AWS.",
+    "role": "INGÉNIEURE CLOUD & DEVOPS",
+    "type": "Projet Scolaire - Epitech",
+    "aboutTitle": "À PROPOS DU PROJET",
+    "aboutP1": "KubeQuest est un projet d'infrastructure cloud-native construit pour provisionner et gérer un cluster Kubernetes sur AWS de A à Z, couvrant l'ensemble du cycle de vie d'un déploiement cloud-native : provisionnement du cluster, ingress et routage du trafic, et gestion de configuration templatisée.",
+    "aboutP2": "Le projet démontre l'orchestration de conteneurs et la mise en place d'infrastructure cloud-native, avec nginx-ingress et des règles d'ingress personnalisées pour le routage du trafic, le Kubernetes Dashboard pour la visibilité du cluster, et deux approches complémentaires de gestion de configuration : Helm pour les déploiements packagés et Kustomize pour les overlays spécifiques à chaque environnement.",
+    "featuresTitle": "FONCTIONNALITÉS CLÉS",
+    "features": {
+      "0": {
+        "label": "CLUSTER PROVISIONNÉ SUR AWS",
+        "detail": "Cluster Kubernetes provisionné et géré directement sur l'infrastructure AWS."
+      },
+      "1": {
+        "label": "INGRESS & ROUTAGE DU TRAFIC",
+        "detail": "Contrôleur nginx-ingress configuré avec des règles d'ingress personnalisées pour exposer et router le trafic vers les services."
+      },
+      "2": {
+        "label": "VISIBILITÉ DU CLUSTER",
+        "detail": "Kubernetes Dashboard déployé pour la surveillance et la visibilité du cluster en temps réel."
+      },
+      "3": {
+        "label": "DOUBLE GESTION DE CONFIGURATION",
+        "detail": "Helm pour des déploiements templatisés et packagés, associé à Kustomize pour des overlays de configuration spécifiques à chaque environnement."
+      }
+    },
+    "techTitle": "STACK TECHNIQUE",
+    "impactTitle": "CE QUE ÇA DÉMONTRE",
+    "impact": [
+      "Mise en place d'infrastructure cloud-native et orchestration de conteneurs sur AWS",
+      "Routage du trafic basé sur ingress et exposition de services avec nginx-ingress",
+      "Gestion de configuration avec deux approches complémentaires, Helm et Kustomize, pour des déploiements templatisés et spécifiques à chaque environnement"
+    ],
+    "methodologyTitle": "APPROCHE TECHNIQUE",
+    "methodology": [
+      "Provisionnement du cluster et mise en place de l'infrastructure sur AWS",
+      "Configuration du contrôleur d'ingress et des règles de routage pour l'exposition des services",
+      "Intégration du Kubernetes Dashboard pour l'observabilité du cluster",
+      "Implémentation en parallèle avec Helm et Kustomize pour comparer la gestion de configuration templatisée et par overlays"
     ],
     "backShort": "Retour"
   }
