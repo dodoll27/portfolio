@@ -48,6 +48,11 @@ export async function getGitHubActivity(): Promise<{
   ]);
 
   if (!eventsRes.ok || !userRes.ok) {
+    const failed = !eventsRes.ok ? eventsRes : userRes;
+    console.error(
+      `[github] REST request failed: ${failed.status} ${failed.statusText}`,
+      `rate-limit remaining: ${failed.headers.get("x-ratelimit-remaining")}`
+    );
     throw new Error("Failed to fetch GitHub data");
   }
 
@@ -135,13 +140,34 @@ export async function getGitHubActivity(): Promise<{
 
     if (graphqlRes.ok) {
       const graphqlData = await graphqlRes.json();
+      if (graphqlData.errors?.length) {
+        console.error(
+          "[github] GraphQL returned errors:",
+          JSON.stringify(graphqlData.errors)
+        );
+      }
       const calendar =
         graphqlData.data?.user?.contributionsCollection?.contributionCalendar;
       if (calendar) {
         totalContributions = calendar.totalContributions;
         weeks = calendar.weeks;
+      } else {
+        console.error("[github] No contribution calendar in GraphQL response");
       }
+    } else {
+      const body = await graphqlRes.text().catch(() => "");
+      console.error(
+        `[github] GraphQL request failed: ${graphqlRes.status} ${graphqlRes.statusText}` +
+          (graphqlRes.status === 401
+            ? " (GITHUB_TOKEN is invalid, expired or revoked)"
+            : ""),
+        body.slice(0, 500)
+      );
     }
+  } else {
+    console.warn(
+      "[github] GITHUB_TOKEN is not set; skipping contribution graph"
+    );
   }
 
   return {
